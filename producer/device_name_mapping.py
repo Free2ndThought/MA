@@ -3,6 +3,8 @@
 # port 200 for CCU
 # port 199 for CCU historian
 
+# Stromleiste dimis-user:dimis-password@192.168.188.50/xml/?mode=sensor
+
 HOSTNAME_TO_IP = {
     'BLADL_00_001' : '132.231.12.151:100',  #Sensor 1
     'BLADL_00_002' : '132.231.12.151:101',  #Sensor 2
