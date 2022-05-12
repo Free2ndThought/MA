@@ -8,6 +8,7 @@ import xml.etree.ElementTree as ET
 from collections import OrderedDict
 
 from requests.adapters import HTTPAdapter, Retry
+from typing import Optional
 
 from device_name_mapping import HOSTNAME_TO_IP
 
@@ -34,24 +35,34 @@ def parse_allnet_json(j_decoded):
         #    messwert = float(sub_dict['value'])
         #    d[key] = messwert
     sensors = ET.fromstring(j_decoded)
-    for i in range(0, 6):
-        measurement = sensors[i][2].text
+    for sensor in sensors:
+        measurement_id = sensor[1].text
+        measurement = sensor[2].text
         if measurement == 'error':
             d = None
             return d
-        d[mapSensorIDToDict(i)] = sensors[i][2].text
+        mapped_id = mapSensorIDToDict(measurement_id)
+        if mapped_id is not None:
+            d[mapSensorIDToDict(measurement_id)] = measurement
     return d
 
 
-def mapSensorIDToDict(i: int) -> str:
+def mapSensorIDToDict(measurement_id: str) -> Optional[str]:
     """
     Maps ordered xml sensor objects to the dict names defined in OrderedDict
     @rtype: str
     """
-    sensor_map = ["Wechselspannung", 'Wechselstrom', 'Leistung', 'Leistungsfaktor',
-                  'Frequenz', 'Kontakt Eingang', 'Intern', 'Schaltrelais',
-                  'Geräte LED', 'Geräte LED 3']
-    return sensor_map[i]
+    sensor_map_dict = {'AC Voltage': 'Wechselspannung',
+                       'AC Current': 'Wechselstrom',
+                       'Power': 'Leistung',
+                       'Power factor': 'Leistungsfaktor',
+                       'Frequency': 'Frequenz',
+                       'Contact input': 'Kontakt Eingang',
+                       'Internal': 'Intern'}
+    if measurement_id in sensor_map_dict:
+        return sensor_map_dict[measurement_id]
+    else:
+        return None
 
 
 class AllnetPoll(Thread):
