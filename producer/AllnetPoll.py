@@ -43,7 +43,7 @@ def parse_allnet_json(j_decoded):
             return d
         mapped_id = mapSensorIDToDict(measurement_id)
         if mapped_id is not None:
-            d[mapSensorIDToDict(measurement_id)] = measurement
+            d[mapped_id] = measurement
     return d
 
 
