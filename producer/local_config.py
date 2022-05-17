@@ -7,8 +7,8 @@ SETUP_NR = 0
 USE_CREDENTIALS = True
 
 if USE_CREDENTIALS:
-    with open('credentials.auth', 'rb') as cred_file:
-        with open('k.ey', 'rb') as key_file:
+    with open('.credentials.auth', 'rb') as cred_file:
+        with open('.k.ey', 'rb') as key_file:
             key = key_file.read()
         f = fernet.Fernet(key)
         credentials_enc = cred_file.read()
@@ -36,8 +36,8 @@ def configure_authentication() -> dict:
 # use this to create key and insert credentials
 if __name__ == '__main__':
 
-    if os.path.exists('k.ey'):
-        with open('k.ey', 'rb') as key_file:
+    if os.path.exists('.k.ey'):
+        with open('.k.ey', 'rb') as key_file:
             key = key_file.read()
     else:
         f = fernet.Fernet.generate_key()
@@ -45,6 +45,6 @@ if __name__ == '__main__':
     f = fernet.Fernet(key)
     credentials_dec = configure_authentication()
 
-    with open('credentials.auth', 'wb') as cred_file:
+    with open('.credentials.auth', 'wb') as cred_file:
         cred_file.write(f.encrypt(json.dumps(credentials_dec).encode('utf-8')))
         cred_file.close()
