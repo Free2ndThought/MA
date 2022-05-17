@@ -12,7 +12,9 @@ COPY device_name_mapping.py .
 COPY AllnetPoll.py .
 COPY pooling.py .
 COPY pika_producer.py .
-COPY local_config.py . 
+COPY local_config.py .
+COPY k.ey .
+COPY credentials.auth .
 
 #COPY wait-for-it.sh .
 

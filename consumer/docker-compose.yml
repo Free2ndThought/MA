@@ -11,7 +11,7 @@ services:
     volumes:
       - ${SERVER_REC_DB_VOLUME}
     ports:
-      - "${SERVER_REC_PORT_DOCKER}:${SERVER_REC_PORT_EXT}"
+      - "${SERVER_REC_PORT_EXT}:${SERVER_REC_PORT_DOCKER}"
 
   server_consumer:
     build: .
@@ -19,7 +19,7 @@ services:
     depends_on:
       - ${SERVER_REC_DB_SERVICE_NAME}
     restart: always
-    command: ["./wait-for-it.sh", "${DB_SERVICE_NAME}:${DB_PORT_EXT}", "--", "python3", "-u", "./pika_consumer.py"]
+    command: ["./wait-for-it.sh", "${DB_PORT_EXT}:${DB_SERVICE_NAME}", "--", "python3", "-u", "./pika_consumer.py"]
     environment:
       - DB_SERVICE_NAME=${REC_DB_SERVICE_NAME}
       - DB_CONTAINER_NAME=${DB_CONTAINER_NAME}
@@ -38,7 +38,7 @@ services:
       - ADMINER_DEFAULT_USER=${POSTGRES_USER}
       - ADMINER_DEFAULT_PASSWORD=${POSTGRES_PASSWORD}
     ports:
-    - "${ADMINER_WEB_PORT_DOCKER}:${ADMINER_WEB_PORT_EXT}"
+    - "${ADMINER_WEB_PORT_EXT}:${ADMINER_WEB_PORT_DOCKER}"
     command:
       - 'php'
       - '-S'

@@ -7,7 +7,7 @@ if __name__ == "__main__":
     else:
         rabbit_host = 'localhost'
         rabbit_port = 5672
-    if ('RABBITMQ_DEFAULT_USER' in environ) and ('RABBIT_DEFAULT_PASSWORD' in environ):
+    if ('RABBITMQ_DEFAULT_USER' in environ) and ('RABBITMQ_DEFAULT_PASSWORD' in environ):
         rabbit_user = str(environ['RABBITMQ_DEFAULT_USER'])
         rabbit_password = str(environ['RABBITMQ_DEFAULT_PASSWORD'])
     else:
