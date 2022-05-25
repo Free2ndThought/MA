@@ -3,7 +3,7 @@ from os import environ
 if __name__ == "__main__":
     if 'RABBIT_HOST' in environ and 'RABBITMQ_PORT_CON_EXT' in environ:
         rabbit_host = str(environ['RABBIT_HOST'])  # e.g 10.10.10.2
-        rabbit_port = str(environ['RABBITMQ_PORT_CON_EXT'])
+        rabbit_port = str(environ['RABBITMQ_PORT_CON_DOCKER'])
     else:
         rabbit_host = 'localhost'
         rabbit_port = 5672

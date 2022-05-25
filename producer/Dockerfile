@@ -11,10 +11,8 @@ USER appuser
 COPY device_name_mapping.py .
 COPY AllnetPoll.py .
 COPY pooling.py .
-COPY pika_producer.py .
-COPY local_config.py .
-COPY .k.ey .
-COPY .credentials.auth .
+COPY pika_producer.py .credentials.auth* ./
+COPY local_config.py .k.ey* ./
 
 #COPY wait-for-it.sh .
 

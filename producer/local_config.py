@@ -4,9 +4,9 @@ from cryptography import fernet
 import json
 
 SETUP_NR = 0
-USE_CREDENTIALS = True
 
-if USE_CREDENTIALS:
+
+if os.path.exists('.credentials.auth'):
     with open('.credentials.auth', 'rb') as cred_file:
         with open('.k.ey', 'rb') as key_file:
             key = key_file.read()
@@ -29,7 +29,9 @@ DEVICE_LIST = [
 
 def configure_authentication() -> dict:
     username = input('Username:')
-    password = input('Password: ')
+    if username == '':
+        return {}
+    password = input('Password:')
 
     return {'username': username, 'password': password}
 
@@ -45,6 +47,7 @@ if __name__ == '__main__':
     f = fernet.Fernet(key)
     credentials_dec = configure_authentication()
 
-    with open('.credentials.auth', 'wb') as cred_file:
-        cred_file.write(f.encrypt(json.dumps(credentials_dec).encode('utf-8')))
-        cred_file.close()
+    if credentials_dec.keys().__len__() > 0:
+        with open('.credentials.auth', 'wb') as cred_file:
+            cred_file.write(f.encrypt(json.dumps(credentials_dec).encode('utf-8')))
+            cred_file.close()
