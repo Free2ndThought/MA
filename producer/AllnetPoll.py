@@ -12,11 +12,13 @@ from typing import Optional
 
 from device_name_mapping import HOSTNAME_TO_IP
 
-
-# TODO Welchen Zeitgeber verwendet Discovergy ? NTP ? Unixtime
-# TODO dataclass with __slot__ instad of OrderedDict
-
-def parse_allnet_json(j_decoded):
+"""
+Parses xml data items received by the request made in run method. Ordered Dicts show the possible data items expected
+by the sensor.
+@:param j_decoded Base64 decoded response package containing an xml file description
+@:returns measurement object d
+"""
+def parse_allnet_xml(j_decoded):
 
     #j_decoded = json.loads(j, encoding='ISO-8859-1')
     d = OrderedDict({'Wechselspannung': None,
@@ -50,7 +52,8 @@ def parse_allnet_json(j_decoded):
 def mapSensorIDToDict(measurement_id: str) -> Optional[str]:
     """
     Maps ordered xml sensor objects to the dict names defined in OrderedDict
-    @rtype: str
+    @rtype: str/None
+    @:returns label used to store data item if applicable, None otherwise
     """
     sensor_map_dict = {'AC Voltage': 'Wechselspannung',
                        'AC Current': 'Wechselstrom',
@@ -72,10 +75,10 @@ class AllnetPoll(Thread):
         self.name = str(name)
         self.daemon = True
         self.ip = HOSTNAME_TO_IP[name]
-        self.url = "http://%s/xml/?mode=sensor" % self.ip
+        self.url = "http://%s/xml/?mode=sensor" % self.ip # url to receive xml data item, change for https
         self.output_queue = output_queue
         retry_counter = 0
-        while retry_counter < 2:
+        while retry_counter < 2: # use retries if single requests fail
             try:
                 session = requests.Session()
                 retry = Retry(connect=3, backoff_factor=0.5)
@@ -95,6 +98,10 @@ class AllnetPoll(Thread):
                 retry_counter += 1
 
 
+    """
+    Runs a request session for every running thread of AllnetPoll. Adds unix timestamps for request and reply to each
+     measurement, which are saved in the database. Run is executed until the service terminates
+    """
     def run(self):
         with requests.Session() as session:
             while True:
@@ -104,7 +111,7 @@ class AllnetPoll(Thread):
                     assert response.status_code == 200, ('HTTP-Statuscode', response.status_code, response.content)
                     t_reply = unixtime()
 
-                    allnet_dict = parse_allnet_json(response.content.decode('utf-8'))
+                    allnet_dict = parse_allnet_xml(response.content.decode('utf-8'))
                     if allnet_dict: #allnet_dict is None if the parser encounters an error
                         allnet_dict['Unixtime Request'] = t_request
                         allnet_dict['Unixtime Reply']   = t_reply

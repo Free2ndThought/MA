@@ -112,7 +112,7 @@ def create_table_and_insert_values(session: Session, metadata: sqlalchemy.MetaDa
                                       sqlalchemy.Column('avg_power', sqlalchemy.Float, nullable=True),
                                       sqlalchemy.Column('measurement_count', sqlalchemy.Integer, nullable=True))
         meta_table.create(bind=engine)
-        metadata_object._add_table(meta_table)
+        metadata_object._add_table(meta_table.name,None, meta_table)
         print(f'table {meta_table.name} created')
     else:
         meta_table = metadata.tables[f'{table_name}']
@@ -171,15 +171,3 @@ for sensor_table, i, metadata_object in sensor_generator():
 
 end_time = datetime.datetime.now()
 print(f'completion time: {end_time - start_time}')
-
-# rudimentary relationships are produced
-# stmnt = select(func.min(Sensor_1_reply))
-
-# stmnt = select(Sensor_1.Leistung).where(Sensor_1_reply.in_([1650319702592,	1650319708492]))
-# result = session.execute(stmnt)
-# for entry in result.all():
-#    print(entry[0])
-#    print(type(entry[0]))
-
-# collection-based relationships are by default named
-# "<classname>_collection"

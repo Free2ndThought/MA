@@ -78,9 +78,9 @@
 \newcommand{\thesisType}{Masterarbeit}
 
 \makeatletter
-\let\thetitle\@title
-\let\theauthor\@author
-\let\thedate\@date
+\newcommand{\thetitle}{\@title}
+\newcommand{\theauthor}{\@author}
+\newcommand{\thedate}{\@date}
 \makeatother
 
 \pagestyle{scrheadings}

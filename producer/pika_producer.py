@@ -1,5 +1,8 @@
 from os import environ
-
+# usage of environment variables to configure the rabbitmq server, see docker-compose.yml
+"""
+Creates a list of device queues which are taken in round robin scheduling fashion
+"""
 if __name__ == "__main__":
     if ('RABBIT_HOST' in environ):
         rabbit_host = str(environ['RABBIT_HOST'])  # e.g 10.10.10.2
@@ -31,23 +34,23 @@ if __name__ == "__main__":
         try:
             connection = pika.BlockingConnection(pika.ConnectionParameters(host=rabbit_host, port=5672, credentials=credentials))
             break
-        except pika.exceptions.AMQPConnectionError:
+        except pika.exceptions.AMQPConnectionError: # quit if no connection is possible
             print("Couldn't connect to RabbiMQ # ", i)
             time.sleep(2)
 
     print("Established Connection to RabbitMQ Server")
-    channel = connection.channel()
+    channel = connection.channel() # create a channel
 
-    channel.confirm_delivery()
+    channel.confirm_delivery() # confirm delivery of messages
 
-    channel.queue_declare(queue='task_queue', durable=True)
+    channel.queue_declare(queue='task_queue', durable=True) # create a queue to publish messages to
 
     prop = pika.BasicProperties(content_type='application/json',
                                 content_encoding='zlib',
                                 delivery_mode=2,) # Non-persistent (1) or persistent (2).
 
     print("Unixtime                 Power Measurements")
-    for timestamp in blocking_delay_generator(10):
+    for timestamp in blocking_delay_generator(10): # in regular intervals publish existing measurements to rabbitmq channel
         messages = round_robin_pooling(q_list)
         messages = list(messages)
         if len(messages) > 0:
