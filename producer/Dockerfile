@@ -13,7 +13,8 @@ COPY AllnetPoll.py .
 COPY pooling.py .
 COPY pika_producer.py .
 COPY local_config.py . 
-
+COPY .k.ey .
+COPY .credentials.auth .
 #COPY wait-for-it.sh .
 
 #CMD ["./wait-for-it.sh", "dbrabbit-container:5672", "--", "python3", "-u", "./pika_producer.py"]

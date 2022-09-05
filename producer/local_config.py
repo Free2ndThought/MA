@@ -1,5 +1,62 @@
-SETUP_NR = 0 # possible to provide seperate setups if different rabbit mq producers and consumers are needed
+import os.path
 
-devicelist = list(range(1,38)) # simple numbered list representing all devices
+from cryptography import fernet
+import json
 
-DEVICE_LIST = [devicelist] # variable that is accessed by producer
+SETUP_NR = 0
+USE_CREDENTIALS = os.path.exists('.credentials.auth')
+
+if USE_CREDENTIALS:
+    with open('.credentials.auth', 'rb') as cred_file:
+        with open('.k.ey', 'rb') as key_file:
+            key = key_file.read()
+        f = fernet.Fernet(key)
+        credentials_enc = cred_file.read()
+        CREDENTIALS = json.loads(f.decrypt(credentials_enc))
+else:
+    CREDENTIALS = None
+
+devicelist = list(range(1,2))
+#devicelist.remove(4)
+#devicelist.remove(14)
+#devicelist.remove(30)
+DEVICE_LIST = [
+    #[1,2,3,5,6,7,8,9,10],
+    #[1,2,3,4,5,6,7,8,9,10],
+    devicelist,
+    #[1,2,3,4,5,6,7,8,9,10],
+]
+
+def configure_authentication() -> dict:
+    username = input('Username:')
+    password = input('Password: ')
+
+    return {'username': username, 'password': password}
+
+def read_authentication(f) -> dict:
+    with open('.credentials.auth', 'rb') as cred_file:
+        encrypted_dump = cred_file.read()
+        dump = f.decrypt(encrypted_dump)
+        print(dump)
+        return json.load(dump)
+
+# use this to create key and insert credentials
+if __name__ == '__main__':
+
+    if os.path.exists('.k.ey'):
+        with open('.k.ey', 'rb') as key_file:
+            key = key_file.read()
+    else:
+        key = fernet.Fernet.generate_key()
+        with open('.k.ey', 'wb') as key_file:
+            key_file.write(key)
+
+    f = fernet.Fernet(key)
+    if not os.path.exists('.credentials.auth'):
+        credentials_dec = configure_authentication()
+    else:
+        auth_dict = read_authentication(f)
+
+    with open('.credentials.auth', 'wb') as cred_file:
+        cred_file.write(f.encrypt(json.dumps(credentials_dec).encode('utf-8')))
+        cred_file.close()

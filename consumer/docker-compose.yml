@@ -1,65 +1,62 @@
-version: '3.7'
+version: '3.8'
 services:
-  dmis_db:
+  server_rec_db:
     image: "postgres:11"
-    container_name: "dmis_db-container"
+    container_name: "${SERVER_REC_DB_CONTAINER_NAME}"
     restart: always
     environment:
-      - POSTGRES_USER=dmis_dbuser
-      - POSTGRES_PASSWORD=dmis_dbpassword
-      - POSTGRES_DB=dmis_recordings_db
-    volumes:
-      - /docker/projects/lehner/postgresql/data
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
     ports:
-      - "6543:5432"
+      - "${SERVER_REC_PORT_EXT}:${SERVER_REC_PORT_DOCKER}"
 
-  pika_consumer1:
+  server_consumer:
     build: .
-    container_name: "pika_consumer1"
+    container_name: "${CONSUMER_CONTAINER_NAME}"
     depends_on:
-      - dmis_db
+      - ${SERVER_REC_DB_SERVICE_NAME}
     restart: always
-    command: ["./wait-for-it.sh", "dmis_db:5432", "--", "python3", "-u", "./pika_consumer.py"]
+    command: ["./wait-for-it.sh", "${SERVER_REC_DB_CONTAINER_NAME}:${SERVER_REC_PORT_DOCKER}", "--", "python3", "-u", "./pika_consumer.py"]
     environment:
-      - BLADL_SETUP_NR=BLADL_00
-      - RABBIT_HOST=rabbit1
+      - DB_SERVICE_NAME=${SERVER_REC_DB_SERVICE_NAME}
+      - DB_CONTAINER_NAME=${SERVER_REC_DB_CONTAINER_NAME}
+      - DB_NAME=${DB_NAME}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - RABBIT_HOST=${RABBIT_HOST}
+      - RABBIT_USER=${RABBIT_USER}
+      - RABBIT_PASSWORD=${RABBIT_PASSWORD}
+      - RABBIT_PORT=${RABBIT_PORT}
 
-  adminer:
+  server_adminer:
     image: adminer
     restart: always
     environment:
-      - ADMINER_DEFAULT_SERVER=132.231.59.224:6543
-      - ADMINER_DEFAULT_USER=dmis_dbuser
-      - ADMINER_DEFAULT_PASSWORD=dmis_dbpassword
+      - ADMINER_DEFAULT_SERVER=${SERVER_REC_DB_CONTAINER_NAME}:${SERVER_REC_PORT_DOCKER}
+      - ADMINER_DEFAULT_USER=${POSTGRES_USER}
+      - ADMINER_DEFAULT_PASSWORD=${POSTGRES_PASSWORD}
     ports:
-    - "8282:8282"
+    - "${ADMINER_WEB_PORT_EXT}:${ADMINER_WEB_PORT_DOCKER}"
     command:
       - 'php'
       - '-S'
-      - '[::]:8282'
+      - '[::]:${ADMINER_WEB_PORT_EXT}'
       - '-t'
       - '/var/www/html'
     entrypoint:
       - 'entrypoint.sh'
       - 'docker-php-entrypoint'
 
-  grafana:
-    image: grafana/grafana-enterprise:latest
-    environment:
-      - GF_FEATURE_TOGGLES_ENABLE=ngalert
-    volumes:
-      - grafana_volume
-    ports:
-      - "3050:3000"
-
 volumes:
-
-  dmis_db-volume:
+  server_rec_db-volume:
     driver: local
-  grafana_volume:
-    driver: local
+    driver_opts:
+      type: volume
+      device: /docker/projects/dimis/db
+      o: bind
 
 networks:
   default:
     external: true
-    name: mttq-net
+    name: ${NETWORK_NAME}

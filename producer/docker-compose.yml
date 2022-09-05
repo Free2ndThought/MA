@@ -1,33 +1,38 @@
-version: '3.7'
+version: '3.8'
 services:
-  rabbitmq:
+  server-rabbit:
     image: "rabbitmq:3.7-management"
-    container_name: "rabbit-container"
-    hostname: "rabbit1"
+    container_name: ${RABBITMQ_CONTAINER_NAME}
+    hostname: "${RABBITMQ_HOSTNAME}"
     restart: always
     environment:
-      - RABBITMQ_DEFAULT_USER=rabbitmq
-      - RABBITMQ_DEFAULT_PASS=rabbitmq
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_USER}
     ports:
-      - "5672:5672" # Message Queue Main Port
-      - "8080:15672"
+      - "${RABBITMQ_PORT_CON_EXT}:${RABBITMQ_PORT_CON_DOCKER}" # Message Queue Main Port
+      - "${RABBITMQ_PORT_WEB_EXT}:${RABBITMQ_PORT_WEB_DOCKER}"
     volumes:
-      - /var/lib/rabbitmq
+            - server-rabbit-volume:/docker/projects/volumes
 
-  allnetcrawler:
+  servercrawler:
     build:
       context: .
-    container_name: "allnetcrawler-container"
+    container_name: ${ALLNETCRAWLER_NAME}
     depends_on:
-      - rabbitmq
+      - ${RABBITMQ_SERVICE_NAME}
     restart: always
     environment:
-      - RABBIT_HOST=rabbit1
+      - RABBIT_HOST=${RABBITMQ_HOSTNAME}
+      - RABBITMQ_PORT_CON_EXT=${RABBITMQ_PORT_CON_EXT}
+      - RABBITMQ_PORT_CON_DOCKER=${RABBITMQ_PORT_CON_DOCKER}
+      - RABBIT_IN_DOCKER=${RABBIT_IN_DOCKER} #remove if rabbitmq runs externally
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_DEFAULT_PASSWORD=${RABBITMQ_DEFAULT_USER}
 
 volumes:
-  rabbit1-volume:
+  server-rabbit-volume:
     driver: local
 
 networks:
   default:
-    name: mttq-net
+    name: ${NETWORK_NAME}

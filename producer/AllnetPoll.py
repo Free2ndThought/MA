@@ -3,6 +3,7 @@ from threading import Thread
 import time
 from time import time as unixtime
 import requests
+requests.packages.urllib3.disable_warnings()
 import xml.etree.ElementTree as ET
 
 from collections import OrderedDict
@@ -12,39 +13,32 @@ from typing import Optional
 
 from device_name_mapping import HOSTNAME_TO_IP
 
-"""
-Parses xml data items received by the request made in run method. Ordered Dicts show the possible data items expected
-by the sensor.
-@:param j_decoded Base64 decoded response package containing an xml file description
-@:returns measurement object d
-"""
-def parse_allnet_xml(j_decoded):
-
-    #j_decoded = json.loads(j, encoding='ISO-8859-1')
+def parse_allnet_json(j_decoded):
+    # j_decoded = json.loads(j, encoding='ISO-8859-1')
     d = OrderedDict({'Wechselspannung': None,
-                     'Wechselstrom'   : None,
-                     'Leistung'       : None,
+                     'Wechselstrom': None,
+                     'Leistung': None,
                      'Leistungsfaktor': None,
-                     'Frequenz'       : None,
+                     'Frequenz': None,
                      'Kontakt Eingang': None,
-                     'Intern'         : None,
-                     'Schaltrelais'   : None,
-                     'Geräte LED'     : None,
-                     'Geräte LED 3'   : None
-                    })
-        # for sub_dict in j_decoded:
-        #    key = sub_dict['name']
-        #    messwert = float(sub_dict['value'])
-        #    d[key] = messwert
+                     'Intern': None,
+                     'Schaltrelais': None,
+                     'Geräte LED': None,
+                     'Geräte LED 3': None
+                     })
+    # for sub_dict in j_decoded:
+    #    key = sub_dict['name']
+    #    messwert = float(sub_dict['value'])
+    #    d[key] = messwert
     sensors = ET.fromstring(j_decoded)
     for sensor in sensors:
         measurement_id = sensor[1].text
         measurement = sensor[2].text
-        if measurement == 'error':
+        mapped_id = mapSensorIDToDict(measurement_id)
+        if measurement == 'error' and mapped_id is not None:
             d = None
             return d
-        mapped_id = mapSensorIDToDict(measurement_id)
-        if mapped_id is not None:
+        else:
             d[mapped_id] = measurement
     return d
 
@@ -52,8 +46,7 @@ def parse_allnet_xml(j_decoded):
 def mapSensorIDToDict(measurement_id: str) -> Optional[str]:
     """
     Maps ordered xml sensor objects to the dict names defined in OrderedDict
-    @rtype: str/None
-    @:returns label used to store data item if applicable, None otherwise
+    @rtype: str
     """
     sensor_map_dict = {'AC Voltage': 'Wechselspannung',
                        'AC Current': 'Wechselstrom',
@@ -69,23 +62,27 @@ def mapSensorIDToDict(measurement_id: str) -> Optional[str]:
 
 
 class AllnetPoll(Thread):
-    TIMEOUT = 20 # max response-time with one powerplug recorded = 11.14s
-    def __init__(self, name, output_queue):
+    TIMEOUT = 20  # max response-time with one powerplug recorded = 11.14s
+
+    def __init__(self, name, output_queue, auth=None):
         super(AllnetPoll, self).__init__()
         self.name = str(name)
         self.daemon = True
         self.ip = HOSTNAME_TO_IP[name]
-        self.url = "http://%s/xml/?mode=sensor" % self.ip # url to receive xml data item, change for https
+        if auth is None:
+            self.url = "https://%s/xml/?mode=sensor" % self.ip
+        else:
+            self.url = f'https://{auth["username"]}:{auth["password"]}@{self.ip}/xml/?mode=sensor'
         self.output_queue = output_queue
         retry_counter = 0
-        while retry_counter < 2: # use retries if single requests fail
+        while retry_counter < 2:
             try:
                 session = requests.Session()
                 retry = Retry(connect=3, backoff_factor=0.5)
                 adapter = HTTPAdapter(max_retries=retry)
                 session.mount('http://', adapter)
                 session.mount('https://', adapter)
-                response = session.get(self.url, timeout=AllnetPoll.TIMEOUT,)
+                response = session.get(self.url, timeout=AllnetPoll.TIMEOUT, verify=False)
                 assert response.status_code == 200, ('HTTP-Statuscode', response.status_code, response.content)
                 print(f'{self.url} is ok!')
                 retry_counter = 2
@@ -97,25 +94,20 @@ class AllnetPoll(Thread):
                 time.sleep(10)
                 retry_counter += 1
 
-
-    """
-    Runs a request session for every running thread of AllnetPoll. Adds unix timestamps for request and reply to each
-     measurement, which are saved in the database. Run is executed until the service terminates
-    """
     def run(self):
         with requests.Session() as session:
             while True:
                 try:
                     t_request = unixtime()
-                    response = session.get(self.url, timeout=AllnetPoll.TIMEOUT)
+                    response = session.get(self.url, timeout=AllnetPoll.TIMEOUT, verify=False)
                     assert response.status_code == 200, ('HTTP-Statuscode', response.status_code, response.content)
                     t_reply = unixtime()
 
-                    allnet_dict = parse_allnet_xml(response.content.decode('utf-8'))
-                    if allnet_dict: #allnet_dict is None if the parser encounters an error
+                    allnet_dict = parse_allnet_json(response.content.decode('utf-8'))
+                    if allnet_dict:  # allnet_dict is None if the parser encounters an error
                         allnet_dict['Unixtime Request'] = t_request
-                        allnet_dict['Unixtime Reply']   = t_reply
-                        allnet_dict['DeviceName']   = self.name
+                        allnet_dict['Unixtime Reply'] = t_reply
+                        allnet_dict['DeviceName'] = self.name
 
                         self.output_queue.put(allnet_dict)
                 except requests.exceptions.Timeout as e:
