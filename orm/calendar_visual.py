@@ -1,9 +1,9 @@
-import calmap
 from datetime import datetime
 
+import calmap
+import matplotlib.pyplot as plt
 import pandas
 import pandas as pd
-import matplotlib.pyplot as plt
 
 
 def create_per_day_plot():
@@ -25,7 +25,7 @@ def create_per_device_plot():
     csv_file_device = 'per_day_per_sensor_report.csv'
     values_device = pd.read_csv(csv_file_device, sep=';')
     per_sensor_matrizes = {}
-    for sensor_id in range(1,38):
+    for sensor_id in range(1, 38):
         matrix = values_device[values_device['sensorID'] == sensor_id]
         matrix.set_index('day', inplace=True)
         matrix.index = pandas.to_datetime(matrix.index, format='%d-%m-%Y', dayfirst=True)
@@ -89,6 +89,7 @@ def per_user_cals(per_sensor_matrizes):
         plt.clf()
         plt.close(fig)
 
+
 def per_devicetype_cals(per_sensor_matrizes):
     sensor_csv_file = 'sensor_to_workplace.csv'
     sensor_to_workplace_matrix = pd.read_csv(sensor_csv_file, sep=';')
@@ -140,11 +141,10 @@ def per_devicetype_cals(per_sensor_matrizes):
 
 
 if __name__ == '__main__':
-
     bdate_start = datetime.fromisoformat('2022-06-01')
     bdate_end = datetime.fromisoformat('2022-07-29')
     pandas_weekdays = pd.bdate_range(start=bdate_start, end=bdate_end, freq='B')
     # create wholeday series from csv file
-    #create_per_day_plot()
+    create_per_day_plot()
     # create per device series from csv file
     create_per_device_plot()
