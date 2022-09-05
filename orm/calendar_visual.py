@@ -31,9 +31,9 @@ def create_per_device_plot():
         matrix.index = pandas.to_datetime(matrix.index, format='%d-%m-%Y', dayfirst=True)
         per_sensor_matrizes[sensor_id] = matrix[['wholeday_avg', 'workday_avg']]
 
-    #per_user_cals(per_sensor_matrizes)
+    per_user_cals(per_sensor_matrizes)
 
-    #printer_cals(per_sensor_matrizes)
+    printer_cals(per_sensor_matrizes)
 
     per_devicetype_cals(per_sensor_matrizes)
 
