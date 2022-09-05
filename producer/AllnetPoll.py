@@ -26,10 +26,6 @@ def parse_allnet_json(j_decoded):
                      'Geräte LED': None,
                      'Geräte LED 3': None
                      })
-    # for sub_dict in j_decoded:
-    #    key = sub_dict['name']
-    #    messwert = float(sub_dict['value'])
-    #    d[key] = messwert
     sensors = ET.fromstring(j_decoded)
     for sensor in sensors:
         measurement_id = sensor[1].text

@@ -5,9 +5,9 @@ import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, select, func
-from consumer.pika_consumer import DMIS_RECORDINGS_DB
-
 import inspect
+
+DMIS_RECORDINGS_DB = 'postgresql://dmis_dbuser:dmis_dbpassword@dmis_db-container/dmis_recordings_db'
 
 
 def retrieve_name(var):
@@ -26,51 +26,6 @@ engine = create_engine(new_adress)
 # reflect the tables
 Base.prepare(engine, reflect=True)
 
-# mapped classes are now created with names by default
-# matching that of the table name.
-# Sensor_1 = Base.classes.BLADL_00_001
-# Sensor_2 = Base.classes.BLADL_00_002
-# Sensor_3 = Base.classes.BLADL_00_003
-# Sensor_4 = Base.classes.BLADL_00_004
-# Sensor_5 = Base.classes.BLADL_00_005
-# Sensor_6 = Base.classes.BLADL_00_006
-# Sensor_7 = Base.classes.BLADL_00_007
-# Sensor_8 = Base.classes.BLADL_00_008
-# Sensor_9 = Base.classes.BLADL_00_009
-# Sensor_10 = Base.classes.BLADL_00_010
-# Sensor_11 = Base.classes.BLADL_00_011
-# Sensor_12 = Base.classes.BLADL_00_012
-# Sensor_13 = Base.classes.BLADL_00_013
-# Sensor_14 = Base.classes.BLADL_00_014
-# Sensor_15 = Base.classes.BLADL_00_015
-# Sensor_16 = Base.classes.BLADL_00_016
-# Sensor_17 = Base.classes.BLADL_00_017
-# Sensor_18 = Base.classes.BLADL_00_018
-# Sensor_19 = Base.classes.BLADL_00_019
-# Sensor_20 = Base.classes.BLADL_00_020
-# Sensor_21 = Base.classes.BLADL_00_021
-# Sensor_22 = Base.classes.BLADL_00_022
-# Sensor_23 = Base.classes.BLADL_00_023
-# Sensor_24 = Base.classes.BLADL_00_024
-# Sensor_25 = Base.classes.BLADL_00_025
-# Sensor_26 = Base.classes.BLADL_00_026
-# Sensor_27 = Base.classes.BLADL_00_027
-# Sensor_28 = Base.classes.BLADL_00_028
-# Sensor_29 = Base.classes.BLADL_00_029
-# Sensor_30 = Base.classes.BLADL_00_030
-# Sensor_31 = Base.classes.BLADL_00_031
-# Sensor_32 = Base.classes.BLADL_00_032
-# Sensor_33 = Base.classes.BLADL_00_033
-# Sensor_34 = Base.classes.BLADL_00_034
-# Sensor_35 = Base.classes.BLADL_00_035
-# Sensor_36 = Base.classes.BLADL_00_036
-# Sensor_37 = Base.classes.BLADL_00_037
-# sensorList = [Sensor_1, Sensor_2, Sensor_3, Sensor_3, Sensor_4, Sensor_5, Sensor_6, Sensor_7, Sensor_8, Sensor_9,
-#               Sensor_10, Sensor_11, Sensor_12, Sensor_13, Sensor_14, Sensor_15, Sensor_16, Sensor_17, Sensor_18,
-#               Sensor_19,
-#               Sensor_20, Sensor_21, Sensor_22, Sensor_23, Sensor_24, Sensor_25, Sensor_26, Sensor_27, Sensor_28,
-#               Sensor_29,
-#               Sensor_30, Sensor_31, Sensor_32, Sensor_33, Sensor_34, Sensor_35, Sensor_36, Sensor_37]
 
 def sensor_generator():
     metadata_object = sqlalchemy.MetaData()
