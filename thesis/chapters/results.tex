@@ -65,7 +65,7 @@ As a reference, the average consumption values of user 1 per day, can be seen in
 		\\ 2022-07-28  &28.0511&    53.5048
 		\\ 2022-07-29   &1.0874&     1.0907
 	\end{tabular}
-	\caption{Consumption results of user 1 in Watts}
+	\caption{Consumption results of user 1 in Watts.}
 	\label{tab:user1}
 \end{table}
 The tables \ref{tab:sensor} and \ref{tab:sensor_cont} show the number of available measurement days, their average values and \acrfull{wwcr}. The tables give an individual insight into specific average weekday consumption, which is useful to estimate electricity demands of similar devices. As the number of days approach the 55 days duration of the evaluation range, the resulting values increase in accuracy. The addition of workday averages is then used to compute the \acrshort{wwcr} of each device respectively. This ratio can be used as an indicator to differentiate users and devices that actively reduce consumption outside of work hours. It can be clearly seen that unused sensor outlets possess a \acrshort{wwcr} of about $1$ while values from around 1.3 show little active consumption reduction during off hours. On the other extreme values around 2.3 show a great change of consumption during off hours, which either shows extremely high consumption which would be indicated by a very high \gls{workday} value, or a great reduction which is mostly indicated here.\\
@@ -99,7 +99,7 @@ The evaluation of different workplaces gain little insight as max consumption sp
 		23 & 55 & 6.8836 & 14.1276 & 2.0523 \\
 		24 & 55 & 2.3189 & 4.8253 & 2.0809 \\
 	\end{tabular}
-	\caption{Result table of average \gls{workday}, and weekday consumption of sensor 1 to 24 in Watts. Continuation follows in table \ref{tab:sensor_cont}}
+	\caption{Result table of average \gls{workday}, and weekday consumption of sensor 1 to 24 in Watts. Continuation follows in table \ref{tab:sensor_cont}.}
 	\label{tab:sensor}
 \end{table}
 \begin{table}[h]
@@ -119,15 +119,15 @@ The evaluation of different workplaces gain little insight as max consumption sp
 		36 & 55 & 27.0940 & 36.2963 & 1.3396 \\
 		37 & 55 & 45.8122 & 65.0602 & 1.4201 \\
 	\end{tabular}
-	\caption{Result table of average \gls{workday}, and weekday consumption of sensor 25 to 37 in Watts. Precursory available in result table \ref{tab:sensor}}
+	\caption{Result table of average \gls{workday}, and weekday consumption of sensor 25 to 37 in Watts. Precursory available in result table \ref{tab:sensor}.}
 	\label{tab:sensor_cont}
 \end{table}
-To examine differences in workplace organization, tables \ref{tab:multi_wp}, \ref{tab:dual_workplace} and \ref{tab:singleworkplace} show overview values of the respective workplace type. Each table shows the corresponding Devices, their overall minimum and maximum consumption value on record, as well as the average consumption across the evaluation period. Each final row shows a 'Total' value that represents the total minimum, maximum and average of the values of the table above. This final row in each table shows the peak consumption value in them, and the respective device can be determined, and the average total consumption can again be used to estimate consumption of similar workplaces. Dual workplace evaluations contain a large number of vacant or changing occupation during the measurement period. Due to this a relevant comparison between the workplaces gives little insight in their comparison. As indicated by the maximum values, the resulting consumption should be expected to be comparable, a final evaluation does not provide this kind of conclusion. As total values of dual workplaces should be in similar ranges, the fact that averages differ beyond factor 2 cannot be easily ignored. This leads to the theory that workload and/or occupation frequency is very different between the workplaces, and the individual consumption of the users do not scale linearly in dual workplaces irrespective of the type of work and work frequency (like part time to full time employment or home office times).\\The workplace evaluation, completed by the results in table \ref{tab:singleworkplace} gives little insights when comparing absolute values. The issue is, that due to no information on the comparability of each workload in a given workplace, the reduction or increase in consumption can be explained from energy efficiency, to time efficiency with high work consumption, to normal time efficiency averaging a low work consumption.\\
+To examine differences in workplace organization, tables \ref{tab:multi_wp}, \ref{tab:dual_workplace} and \ref{tab:singleworkplace} show overview values of the respective workplace type. Each table shows the corresponding Devices, their overall minimum and maximum consumption value on record, as well as the average consumption across the evaluation period. Each final row shows a 'Total' value that represents the total minimum, maximum and average of the values of the table above. This final row in each table shows the peak consumption value in them, and the respective device can be determined, and the average total consumption can again be used to estimate consumption of similar workplaces. Dual workplace evaluations contain a large number of vacant or changing occupation during the measurement period. Due to this a relevant comparison between the workplaces gives little insight in their comparison. As indicated by the maximum values, the resulting consumption should be expected to be comparable, a final evaluation does not provide this kind of conclusion. As total values of dual workplaces should be in similar ranges, the fact that averages differ beyond factor 2 cannot be easily ignored. This leads to the theory that workload and/or occupation frequency is very different between the workplaces, and the individual consumption of the users do not scale linearly in dual workplaces irrespective of the type of work and work frequency (like part time to full time employment or home office times).\\The workplace evaluation, completed by the results in table \ref{tab:singleworkplace} gives little insights when comparing absolute values. The issue is, that due to no information on the comparability of each workload in a given workplace, the reduction or increase in consumption can be explained from energy efficiency, to time efficiency with high work consumption, to normal time efficiency averaging a low work consumption.
 \begin{table}[h]
 	\centering
 		\begin{tabular}{l|c|c|c|c}
 		\multicolumn{5}{c}{Workplace 3} \\
-		Device ID & Device Type & min consumption (W)& max consumption (W)& average consumption (W)\\
+		Device ID & Device Type & min power (W)& max power (W)& avg consumption (W)\\
 		14 & PC & -0.3 & 276.4 & 2.0851 \\
 		15 & Monitor & -0.3 & 15.2 & 0.7428 \\
 		16 & PC & -0.2 & 42.7 & -0.0822 \\
@@ -142,7 +142,7 @@ To examine differences in workplace organization, tables \ref{tab:multi_wp}, \re
 	\end{tabular}
 	\begin{tabular}{l|c|c|c|c}
 		\multicolumn{5}{c}{Workplace 4} \\
-		Device ID & Device Type & min consumption (W)& max consumption (W)& average consumption (W)\\
+		Device ID & Device Type & min power (W)& max power (W)& avg consumption (W)\\
 		23 & PC &-0.1 & 89.8 & 2.7413 \\
 		24 & Monitor & -0.3 & 15.3 & 0.8937 \\
 		25 & Monitor & -0.4 & 21.3 & 1.3511 \\
@@ -157,19 +157,19 @@ To examine differences in workplace organization, tables \ref{tab:multi_wp}, \re
 	\end{tabular} 
 	\begin{tabular}{l|c|c|c|c}
 		\multicolumn{5}{c}{Workplace 5} \\
-		Device ID & Device Type & min consumption (W)& max consumption (W)& average consumption (W)\\
+		ID & Type & min power (W)& max power (W)& avg consumption (W)\\
 		33 & PC & 0.3 & 243.2 & 8.2019 \\
 		\hline
 		Total& Multiple & 0.3 & 243.2 & 8.2019 \\
 	\end{tabular}
-	\caption{Result table of Workplaces of type multiple (more than 2 potential users)}
+	\caption{Result table of Workplaces of type multiple (more than 2 potential users).}
 	\label{tab:multi_wp}
 \end{table}
 \begin{table}[h]
 	\centering
 	\begin{tabular}{l|c|c|c|c}
 		\multicolumn{5}{c}{Workplace 1} \\
-		Device ID & Device Type & min consumption (W)& max consumption (W)& average consumption (W)\\
+		ID & Type & min power (W)& max power (W)& avg consumption (W)\\
 		4 & PC & -0.2 & 20.6 & 1.0352 \\
 		5 & Monitor & -0.2 & 21.1 & 0.7207 \\
 		6 & Monitor & -0.2 & 70.2 & 1.7565 \\
@@ -181,7 +181,7 @@ To examine differences in workplace organization, tables \ref{tab:multi_wp}, \re
 	\end{tabular}
 	\begin{tabular}{l|c|c|c|c}
 		\multicolumn{5}{c}{Workplace 6} \\
-		Device ID & Device Type & min consumption (W)& max consumption (W)& average consumption (W)\\
+		ID & Type & min power (W)& max power (W)& avg consumption (W)\\
 		34 & Multiple & -0.3 & 127.9 & 6.1979 \\
 		35 & Multiple & -0.4 & 105.8 & 0.5758 \\
 		\hline
@@ -189,19 +189,19 @@ To examine differences in workplace organization, tables \ref{tab:multi_wp}, \re
 	\end{tabular}
 	\begin{tabular}{l|c|c|c|c}
 		\multicolumn{5}{c}{Workplace 7} \\
-		Device ID & Device Type & min consumption (W)& max consumption (W)& average consumption (W)\\
+		ID & Type & min power (W)& max power (W)& avg consumption (W)\\
 		36 & Multiple & 10.3 & 1180.5 & 27.7893 \\
 		37 & Multiple & 0.7 & 257.4 & 43.2404 \\
 		\hline
 		Total & Multiple & 0.7 & 1180.5 & 72.0296
 	\end{tabular}
-	\caption{Result table of workplaces of type Dual (exactly 2 potential users)}
+	\caption{Result table of workplaces of type Dual (exactly 2 potential users).}
 	\label{tab:dual_workplace}
 \end{table}
 \begin{table}[h]
 	\begin{tabular}{l|c|c|c|c}
 		\multicolumn{5}{c}{Workplace 0} \\
-		Device ID & Device Type & min consumption & max consumption & average consumption\\
+		ID & Type & min power (W)& max power (W)& avg consumption (W)\\
 		1 & PC & -0.2 & 91.2 & 5.8942 \\
 		2 & Monitor & -0.2 & 33.3 & 5.1298 \\
 		3 & Monitor & -0.1 & 33.5 & 6.6894 \\
@@ -210,7 +210,7 @@ To examine differences in workplace organization, tables \ref{tab:multi_wp}, \re
 	\end{tabular}
 	\begin{tabular}{l|c|c|c|c}
 		\multicolumn{5}{c}{Workplace 2} \\
-		Device ID & Device Type & min consumption & max consumption & average consumption\\
+		ID & Type & min power (W)& max power (W)& avg consumption (W)\\
 		10 & PC & -0.2 & 18.4 & 1.1847 \\
 		11 & Monitor & -0.2 & 83.4 & 1.6731 \\
 		12 & Printer & -0.6 & 289.8 & 0.1327 \\
@@ -218,15 +218,15 @@ To examine differences in workplace organization, tables \ref{tab:multi_wp}, \re
 		\hline 
 		Total & Multiple & -0.6 & 2523.0 & 7,8792
 	\end{tabular}
-	\caption{Result table of workplaces of type single (exactly one potential user)}
+	\caption{Result table of workplaces of type single (exactly one potential user).}
 	\label{tab:singleworkplace}
 \end{table}
-In the tables \ref{tab:PCMon} and \ref{tab:devices} a direct comparison of the individual types of devices can be made. Each table consists of the collection of devices of matching type, showing all time minimum, maximum and average consumption measurements. The respective total row of each tabular can be used to determine the consumption ratio of each type of device to the total consumption. In this instance, the multiple type broadly consist of a mixture of all other device types and is ignored in the type differentiation. Interestingly the sum of all recorded single devices almost exactly equals the total consumption of all Multi device sensors (sum of 86.34 to Multi measurement 86.01). The resulting mix of consumption computes to 38\% PC, 37\% Monitors, 6\% Utilities and 19\% through Printing. The average measured consumption adds up to 172.35 Watts and an hourly CO$_2$ footprint of 61.3 g of direct emission through electricity consumption. This gives a yearly footprint estimation of at least 0.38 tons of CO$_2$ using 260 working days a year and assuming zero emissions on the remaining days. By estimations of atmosfair, this equates to about a quarter of the estimated allowed CO$_2$ budget of a person until 2050, to remain in alignment with the Paris agreement \cite{co2_capita}. 
+In tables \ref{tab:PCMon} and \ref{tab:devices} a direct comparison of the individual types of devices can be made. Each table consists of the collection of devices of matching type, showing all time minimum, maximum and average consumption measurements. The respective total row of each tabular can be used to determine the consumption ratio of each type of device to the total consumption. In this instance, the multiple type broadly consist of a mixture of all other device types and is ignored in the type differentiation. Interestingly the sum of all recorded single devices almost exactly equals the total consumption of all Multi device sensors (sum of 86.34 to Multi measurement 86.01). The resulting mix of consumption computes to 38\% PC, 37\% Monitors, 6\% Utilities and 19\% through Printing. The average measured consumption adds up to 172.35 Watts and an hourly CO$_2$ footprint of 61.3 g of direct emission through electricity consumption. This gives a yearly footprint estimation of at least 0.38 tons of CO$_2$ using 260 working days a year and assuming zero emissions on the remaining days. By estimations of atmosfair, this equates to about a quarter of the estimated allowed CO$_2$ budget of a person until 2050, to remain in alignment with the Paris agreement \cite{co2_capita}. 
 \begin{table}[h]
 	\centering
 	\begin{tabular}{l|c|c|c}
 		\multicolumn{4}{c}{Device type PC} \\
-		Device ID & min consumption (W)& max consumption (W)& average consumption (W)\\
+		ID & min power (W)& max power (W)& avg consumption (W)\\
 		1 & -0.2 & 91.2 & 5.8942\\
 		4 & -0.2 & 20.6 & 1.0352 \\
 		7 & -0.3 & 114.7 & 6.2446 \\
@@ -243,7 +243,7 @@ In the tables \ref{tab:PCMon} and \ref{tab:devices} a direct comparison of the i
 	
 	\begin{tabular}{l|c|c|c}
 		\multicolumn{4}{c}{Device type Monitor} \\
-		Device ID & min consumption (W)& max consumption (W)& average consumption (W)\\
+		ID & min power (W)& max power (W)& avg consumption (W)\\
 		2 & -0.2 & 33.3 & 5.1298 \\
 		3 & -0.1 & 33.5 & 6.6894 \\
 		5 & -0.2 & 21.1 & 0.7207 \\
@@ -265,19 +265,19 @@ In the tables \ref{tab:PCMon} and \ref{tab:devices} a direct comparison of the i
 		\hline
 		Total & -0.4 & 83.4 &31.995 \\
 	\end{tabular}
-	\caption{Result table showing average consumption of PC and Monitor devices}
+	\caption{Result table showing average consumption of PC and Monitor devices.}
 	\label{tab:PCMon}
 \end{table}
 \begin{table}[h]
 	\centering
 	\begin{tabular}{l|c|c|c}
 		\multicolumn{4}{c}{Device type Utility} \\
-		Device ID & min consumption (W)& max consumption (W)& average consumption (W)\\
+		ID & min power (W)& max power (W)& avg consumption (W)\\
 		13 & -0.2 & 2523 & 4.8885 \\
 	\end{tabular}
 	\begin{tabular}{l|c|c|c}
 		\multicolumn{4}{c}{Device type Printer} \\
-		Device ID & min consumption (W)& max consumption (W)& average consumption (W)\\
+		ID & min power (W)& max power (W)& avg consumption (W)\\
 		12 & -0.6 & 289.8 & 0.1327 \\
 		22 & -0.2 & 2671.0 & 16.4998 \\
 		\hline
@@ -285,7 +285,7 @@ In the tables \ref{tab:PCMon} and \ref{tab:devices} a direct comparison of the i
 	\end{tabular}
 	\begin{tabular}{l|c|c|c}
 		\multicolumn{4}{c}{Device type Multiple} \\
-		Device ID & min consumption & max consumption & average consumption\\
+		ID & min power (W)& max power (W)& avg consumption (W)\\
 		34 & -0.3 & 127.9 & 6.1979 \\
 		37 & 0.7 & 257.4 & 43.2403 \\
 		36 & 10.3 & 1180.5 & 27.7893 \\
@@ -294,7 +294,7 @@ In the tables \ref{tab:PCMon} and \ref{tab:devices} a direct comparison of the i
 		\hline
 		Total & -0.4 & 1180.5 &86.0055 \\ 
 	\end{tabular}
-	\caption{Result table showing average consumption of Utility, Printer and Multi devices}
+	\caption{Result table showing average consumption of Utility, Printer and Multi devices.}
 	\label{tab:devices}
 \end{table}
 
@@ -378,24 +378,24 @@ In the tables \ref{tab:PCMon} and \ref{tab:devices} a direct comparison of the i
 		Sensor 37&Multiple&7&Dual&0&0 \%\\%
 		\hline%
 	\end{tabular}
-	\caption{Overview of the calculated idle times of each device. The Idle Time column shows the number of intervals (15 minutes) with a power reading of less than 1 Watt}
+	\caption{Overview of the calculated idle times of each device. The Idle Time column shows the number of intervals (15 minutes) with a power reading of less than 1 Watt.}
 	\label{tab:idle}
 \end{table} 
 
 \subsection{Key Insights}\label{subsec:insights}
-The device type evaluation gives parts of the expected results from the literature\cite{min-energy}, that consumption due to monitoring is very comparable to processing consumption as seen in the average consumption values of table \ref{tab:PCMon}. Apparently the different advances in energy efficiency in screens and computer performance seem to balance nicely, as literature values are more than 10 years obsolete. The difference of a few percentage points in consumption (38\% to 44\% for Monitoring, 37\% to 39\%) do not indicate huge progression differences. From another perspective, IT workers should be sensitized to the fact that dual monitor setups increase consumption by roughly 33\% compared to single monitor setups.\\
+\noindent The device type evaluation gives parts of the expected results from the literature\cite{min-energy}, that consumption due to monitoring is very comparable to processing consumption as seen in the average consumption values of table \ref{tab:PCMon}. Apparently the different advances in energy efficiency in screens and computer performance seem to balance nicely, as literature values are more than 10 years obsolete. The difference of a few percentage points in consumption (38\% to 44\% for Monitoring, 37\% to 39\%) do not indicate huge progression differences. From another perspective, IT workers should be sensitized to the fact that dual monitor setups increase consumption by roughly 33\% compared to single monitor setups.\\
 Evaluations in workplace contexts show no clear relations regarding energy consumption. Real work frequency(full time, part time or remote work), and classification of work for each user are likely the major contributor to determine total energy consumption than the individual workplace structure. This evaluation can change if the usage profile of the experiment is not representative of a usual working environment.\\
 \acrfull{wwcr} delivers a suitable measure to differentiate users of similar consumption averages. This can be used to determine possible saving methodologies to increase the ratio by consumption reduction during off work hours on individuals that could harbor a greater saving potential.\\
 Idle time is unsuitable for device agnostic measurements, and needs to be modified according to the expected usage profile of a specific device and the bias / noise effects on the used sensors.
 
 \section{Visualizations}\label{sec:visuals}
 Time series data is in many ways well suited to visualized. However,
-to accommodate for differences in timestamp usage, all database tables created for visualization should use epoch time in milliseconds. This format is used in the sensor\_meta tables, to ease their usage in Grafana. However, different tools can require another format to visualize the time series, and the conversions can be made accordingly using simple division constants. While different applications define epoch base up to the nanoseconds, this kind of application does not benefit from higher frequencies, as http requests provide a lower temporal resolution. 
+to accommodate for differences in timestamp usage, all database tables created for visualization should use epoch time in milliseconds. This format is used in the sensor\_meta tables, to ease their usage in Grafana. However, different tools can require another format to visualize the time series, and the conversions can be made accordingly using simple division constants. While different applications define epoch base up to the nanoseconds, this kind of application does not benefit from higher frequencies, as HTTP requests provide a lower temporal resolution. 
 
 \subsubsection{Heat maps}
 To visualize an overview of consumption over time, in this section a collection of comparable plots are displayed. In figure \ref{fig:user_comparison} the accumulated data for each distinct user can be seen in a row, with whole day values on the left, and data limited to \gls{workday} hours on the right. A great difference in coloring between the left and right sides indicate a high \gls{wwcr} for this user. If devices between users are comparable this indicates either a high consumption during work hours or an effort of energy saving after and before work hours. This evaluation shows to be less effective with short consumption peaks, like in barely used workplaces (see fig \ref{fig:user_comparison} row 5 and 12 for reference).
 As expected, differences between users regarding their \gls{wwcr} can be seen, as well as the less frequented working spaces due to their color extremes. User 14 shows little difference between \gls{workday} and weekday values, which indicates little change of energy consumption during off hours, which means a greater potential of energy efficiency gain should be expected by reducing off hour consumption. As a counter example user 10 can be examined, which shows a bigger color change and narrower distribution. Generally a drop in consumption on Fridays can be examined.  With this kind of analysis, a more directed package of intervention mechanism can be explored, to improve performance of less dedicated users with higher reduction potential. The Indication of the quantitative analysis of user 1 given in the section \ref{subsec:result_tables} using table \ref{tab:user1} can be confirmed using the heat map, as color changes can be clearly seen in comparison of the depictions in the first row. Further of interest is the visualization of user 7 which shows high consumption on weekends. This is the result of constant negative measurements due to noise and a slight sensor bias, as weekend values were not considered, which results in a 0 value in visualization. This fact especially has to be considered when handling measurements including real "negative" measurements due to localized power generation.\\
-Figure \ref{fig:office_consumption} shows the summation of all power consumption on weekdays. Additionally the heat maps were generated using only specific device types. The different kinds of devices that were considered are PCs (see figure \ref{fig:pc_hm}), Monitors (see figure \ref{fig:mon_hm}), Printer (see figure \ref{fig:printer_hm}) and Utilities (see figure \ref{fig:util_hm}). As expected, the color scheme of PC consumption coincides very well with monitor usage, but not very well with printer usage. This indicates external factors to the printer usage besides attendance for example (i.e. exams or meetings/out of office gatherings). These kinds of illustrations can be useful to determine patterns in cooperation, that quantitative information does not allow.
+Figure \ref{fig:office_consumption} shows the summation of all power consumption on weekdays. Additionally the heat maps were generated using only specific device types. The different kinds of devices that were considered are PCs (see figure \ref{fig:pc_hm}), Monitors (see figure \ref{fig:mon_hm}), Printer (see figure \ref{fig:printer_hm}) and Utilities (see figure \ref{fig:util_hm}). As expected, the color scheme of PC consumption coincides very well with monitor usage, but not very well with printer usage. This indicates external factors to the printer usage besides attendance for example (i.e. exams or meetings/out of office gatherings). These kinds of illustrations can be useful to determine patterns in cooperation, that quantitative information does not allow. \hskip
 \begin{figure}[ht]
     \centering
     \subfloat{\includegraphics[width=0.5\textwidth]{images/heatmaps/user_1_wholeday_cal.png}}
@@ -428,44 +428,44 @@ Figure \ref{fig:office_consumption} shows the summation of all power consumption
     \subfloat{\includegraphics[width=0.5\textwidth]{images/heatmaps/user_14_workday_cal.png}}\newline
     \subfloat{\includegraphics[width=0.5\textwidth]{images/heatmaps/user_15_wholeday_cal.png}}
     \subfloat{\includegraphics[width=0.5\textwidth]{images/heatmaps/user_15_workday_cal.png}}\newline
-    \caption{\centering Comparison of the consumption of each user (Row 1-15) over time. Consumption is only considered without weekends with averages during the weekday (left) and working hours (right)}
+    \caption{\centering Comparison of the consumption of each user (Row 1-15) over time. Consumption is only considered without weekends with averages during the weekday (left) and working hours (right).}
     \label{fig:user_comparison}
 \end{figure}
-The observation of reduced consumption on Fridays is increasingly clear using the illustration in figure \ref{fig:office_consumption}. The increased attendance on Wednesday in calendar week 25, as well as Tuesday in the last week is clearly distinguishable. By comparing single user heat maps to the summation can show differentiation between quantitative consumption peaks (consumption due to a higher amount of people) and qualitative peaks (high spikes in consumption due to changes in the workload/ type of labor).\\
+\noindent The observation of reduced consumption on Fridays is increasingly clear using the illustration in figure \ref{fig:office_consumption}. The increased attendance on Wednesday in calendar week 25, as well as Tuesday in the last week is clearly distinguishable. By comparing single user heat maps to the summation can show differentiation between quantitative consumption peaks (consumption due to a higher amount of people) and qualitative peaks (high spikes in consumption due to changes in the workload/ type of labor).
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{images/heatmaps/workday_cal.png}
 	\includegraphics[width=\textwidth]{workday_cal_edit2.png}
-	\caption{Heat map of the sum of all sensors during usual office hours (work hours on \glspl{workday}).Above the unedited plot, below an edited version to improve visibility}
+	\caption{Heat map of the sum of all sensors during usual office hours (work hours on \glspl{workday}).Above the unedited plot, below an edited version to improve visibility.}
 	\label{fig:office_consumption}
 \end{figure}
 \begin{figure}[ht]
 	\centering
 	Personal Computers
 	\includegraphics[width=\textwidth]{images/heatmaps/devicetype_PC_workday_cal.png}
-	\caption{Heat map of the sum of all PC sensors during usual office hours (measured during \glspl{workday})}
+	\caption{Heat map of the sum of all PC sensors during usual office hours (measured during \glspl{workday}).}
 	\label{fig:pc_hm}
 \end{figure}
-As expected the consumption patterns of Monitors highly correlate the pattern given by PC measurements, which can be compared using figures \ref{fig:pc_hm} and \ref{fig:mon_hm}. In comparison the consumptions of utility devices and printer do not match nearly as neatly. In the case of printers the differentiation is harder due to the pronounced consumtpion spike on Wednesday of CW 27
+\noindent As expected the consumption patterns of Monitors highly correlate the pattern given by PC measurements, which can be compared using figures \ref{fig:pc_hm} and \ref{fig:mon_hm}. In comparison the consumptions of utility devices and printer do not match nearly as neatly. In the case of printers the differentiation is harder due to the pronounced consumtpion spike on Wednesday of CW 27.
 \begin{figure}[ht]
 	\centering
 	Monitors
 	\includegraphics[width=\textwidth]{images/heatmaps/devicetype_Monitor_workday_cal.png}
-	\caption{Heat map of the sum of all monitor sensors during usual office hours (measured during \glspl{workday})}
+	\caption{Heat map of the sum of all monitor sensors during usual office hours (measured during \glspl{workday}).}
 	\label{fig:mon_hm}
 \end{figure}
 \begin{figure}[ht]
 	\centering
 	Printer
 	\includegraphics[width=\textwidth]{images/heatmaps/devicetype_Printer_workday_cal.png}
-	\caption{Heat map of the sum of all printer sensors during usual office hours (measured during \glspl{workday})}
+	\caption{Heat map of the sum of all printer sensors during usual office hours (measured during \glspl{workday}).}
 	\label{fig:printer_hm}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	Utilities	\includegraphics[width=\textwidth]{images/heatmaps/devicetype_Utility_workday_cal.png}
-	\caption{Heat map of the sum of all utility sensors during usual office hours (measured during \glspl{workday})}
+	\caption{Heat map of the sum of all utility sensors during usual office hours (measured during \glspl{workday}).}
 	\label{fig:util_hm}
 \end{figure}
 
@@ -475,6 +475,6 @@ Besides showing overview data, Grafana can be used to send notifications if cert
 \begin{figure}[h]
 	\centering	
 	\includegraphics[width=\textwidth]{images/RPMT.png}
-	\caption{Screenshot of the \acrshort{rpmt} dashboard. From top left to bottom right there are panels showing 5 day comparisons to similar devices, the device type, an overview of annotations, the overview of elapsed idle time of the device. the power consumption as a time series, and the cumulative time series with the respective estimated CO$_2$ footprint}
+	\caption{Screenshot of the \acrshort{rpmt} dashboard. From top left to bottom right there are panels showing 5 day comparisons to similar devices, the device type, an overview of annotations, the overview of elapsed idle time of the device. the power consumption as a time series, and the cumulative time series with the respective estimated CO$_2$ footprint.}
 	\label{fig:dashboard}
 \end{figure}

@@ -1,5 +1,5 @@
 \chapter{Methodology}\label{chap:methods}
-In this chapter, the methodology to establish an accurate data basis is discussed.  Section \ref{subsec:hardware} describes the various pieces of hardware with their technical features, as well as the physical implementation in the actual experimental environment. The specific software infrastructure used to extract the information from the hardware is described in detail in section \ref{subsec:software}
+In this chapter, the methodology to establish an accurate data basis is discussed.  Section \ref{subsec:hardware} describes the various pieces of hardware with their technical features, as well as the physical implementation in the actual experimental environment. The specific software infrastructure used to extract the information from the hardware is described in detail in section \ref{subsec:software}.
 
 
 \section{Measurement Equipment}
@@ -29,7 +29,7 @@ This way a (un-)conscious skew towards certain data trends by the experiment can
         Networking & IEEE 802.3u IEEE 802.11b/g/n\\
         \hline
     \end{tabular}
-    \caption{technical data according to the manufacturer}
+    \caption{technical data according to the manufacturer.}
     \label{tab:allnet_data}
 \end{table}
 
@@ -57,7 +57,7 @@ At the setup of the experiment, the provided batch of sensors did not transmit s
 To determine which values are provided, the mode parameter can be chosen to include sensory data only, actuators only, or all. It is necessary to enable remote access to the device using the HTML interface of the sensor. After successful initialization, current sensory data readings can be accessed using the REST API of the device. The result of each HTML request is a response in the data format specified in the 'format' parameter.
 \newpage
 
-\begin{lstlisting}[language=xml, caption={Example data item from a power measurement}, label={fig:xml_data}]
+\begin{lstlisting}[language=xml, caption={Example data item from a power measurement.}, label={fig:xml_data}]
 <?xml version="1.0" encoding="UTF-8"?>
 <sensors>
  <sensor>
@@ -141,7 +141,7 @@ The access to each individual sensor had to be configured using port forwarding 
 		 Sensor\_35\_Meta  & 90\\ \hline
 		 Sensor\_36\_Meta  & 90\\ \hline
 	\end{tabular}
-	\caption{average measurement count per 15 minute interval. Rounded to the full integer}
+	\caption{average measurement count per 15 minute interval. Rounded to the full integer.}
 	\label{tab:counts}
 \end{table}
 
@@ -157,7 +157,7 @@ In conclusion this setup allows an individual request to each sensor and the loc
 	PSQL DB & 6543 \\ \hline
 	RabbitMQ & 8080
 \end{tabular}
-\caption{access ports for the respective docker services. Can be used as suffix after the url energy.uni-passau.de:'suffix'}
+\caption{access ports for the respective docker services. Can be used as suffix after the url energy.uni-passau.de:'suffix'.}
 \label{tab:access}
 \end{table}
 \subsection{Software}\label{subsec:software}
@@ -166,7 +166,7 @@ The energy virtual machine is used by different members of the university chair.
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{images/Docker_Services_Overview.png}
-	\caption{Overview of active docker services within the docker VM}
+	\caption{Overview of active docker services within the docker VM.}
 	\label{fig:docker_overview}
 \end{figure}
 \subsubsection{Producer}
@@ -191,21 +191,21 @@ Additional files in the package only hold function for specific circumstances li
 
 \paragraph{Pika Consumer} receives incoming packages from the Rabbit MQ Consumer and saves them into the database via extracting messages into python dictionaries and inserting into,or respectively creating tables using the sqlalchemy library after a short fault check. For compatibility and maintenance reasons, all further evaluations, insertions and queries by code are also made using sqlalchemy. 
 
-\paragraph{Rabbit MQ Consumer} acts as the counterpart to the Rabbit MQ Producer and only receives incoming parsed measurements. Connection configuration is made using environment variables in the .env file
+\paragraph{Rabbit MQ Consumer} acts as the counterpart to the Rabbit MQ Producer and only receives incoming parsed measurements. Connection configuration is made using environment variables in the .env file.
 	
-\paragraph{PostgreSQL Database} is a docker image of an ordinary PostgreSQL database implementation. Connection configuration is made using environment variables in the .env file. Besides the tables created by the consumer, the active service also holds all metadata tables created during the evaluation phase described in section \ref{chap:results}. A short overview of the database tables, and their logic can be seen in figure \ref{db_tables}
+\paragraph{PostgreSQL Database} is a docker image of an ordinary PostgreSQL database implementation. Connection configuration is made using environment variables in the .env file. Besides the tables created by the consumer, the active service also holds all metadata tables created during the evaluation phase described in section \ref{chap:results}. A short overview of the database tables, and their logic can be seen in figure \ref{db_tables}.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{images/diagram.png}
-	\caption{Overview of the different database tables. Foreign keys are marked, other concatenations are made using table names or dates. For simplicity, multiples of the measurement and meta tables are omitted}
+	\caption{Overview of the different database tables. Foreign keys are marked, other concatenations are made using table names or dates. For simplicity, multiples of the measurement and meta tables are omitted.}
 	\label{db_tables}
 \end{figure}
 
 \paragraph{Grafana} is a time series visualization tool, to create interactive dashboards of a variety of data sources, including PostgreSQL. It provides many useful tools besides time series illustrations, like annotation capabilities, a user management system, and extensive query variables. A basic example dashboard which can be used to illustrate the data set of this work is described in the section \ref{subsec:RPMT}.
 
 \paragraph{Adminer DB Management} is a lightweight administration tool for relational database systems. As the PostgreSQL service is usable like any other db system, any management tool of choice can also be used. However with this service an available management tool can be easily provided. A comprehensive illustration of the information flow of the consumer services can be seen in figure \ref{fig:information_flow_consumer}.\\
-In combination, all services build a powerful foundation to manage, explore and evaluate a variety of datasets in energy consumption measurement. As part of the result section of this work, an example application, called \acrfull{rpmt}, is shown in section \ref{subsec:RPMT}
+In combination, all services build a powerful foundation to manage, explore and evaluate a variety of datasets in energy consumption measurement. As part of the result section of this work, an example application, called \acrfull{rpmt}, is shown in section \ref{subsec:RPMT}.
 
 \begin{figure}
     \centering
@@ -243,7 +243,7 @@ Besides the experimental measurements in the live office environment, an additio
 		Average &Max-Deviation &Variance &StdDev\\
 		41.9417 &4.7 &0.7585 &0.8709
 	\end{tabular}
-	\caption{Result of the evaluation query in listing \ref{lst:eval}}
+	\caption{Result of the evaluation query in listing \ref{lst:eval}.}
 	\label{tab:result}
 \end{table}
 
@@ -258,7 +258,7 @@ Besides the experimental measurements in the live office environment, an additio
 		Operation Mode & Basic Mode b-CH\\ \hline
 		
 	\end{tabular}
-	\caption{Excerpt from manufacturer specifications of the measured device}
+	\caption{Excerpt from manufacturer specifications of the measured device.}
 	\label{tab:movinghead}
 \end{figure}
 \section{ \texorpdfstring{Evaluation Metrics/ \acrfullpl{kpi}}{Evaluation Metrics / KPI}}\label{sec:metrics}

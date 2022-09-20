@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.6)  20 SEP 2022 08:45
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.6)  20 SEP 2022 10:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1142,51 +1142,290 @@ Package glossaries Info: Writing glossary file thesis.glo on input line 98.
 \openout6 = `thesis.acn'.
 
 Package glossaries Info: Writing glossary file thesis.acn on input line 98.
+ (X:\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
+
+(X:\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(X:\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(X:\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(X:\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(X:\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(X:\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+
+(X:\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(X:\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count497
+)
+\@linkdim=\dimen287
+\Hy@linkcounter=\count498
+\Hy@pagecounter=\count499
+
+(X:\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
+)
+(X:\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(X:\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count500
+
+(X:\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4408.
+\c@Hy@tempcnt=\count501
+LaTeX Info: Redefining \url on input line 4746.
+\XeTeXLinkMargin=\dimen288
+
+(X:\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(X:\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count502
+\Field@Width=\dimen289
+\Fld@charsize=\dimen290
+Package hyperref Info: Hyper figures OFF on input line 6024.
+Package hyperref Info: Link nesting OFF on input line 6029.
+Package hyperref Info: Hyper index ON on input line 6032.
+Package hyperref Info: backreferencing OFF on input line 6039.
+Package hyperref Info: Link coloring OFF on input line 6044.
+Package hyperref Info: Link coloring with OCG OFF on input line 6049.
+Package hyperref Info: PDF/A mode OFF on input line 6054.
+
+(X:\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count503
+\c@Item=\count504
+\c@Hfootnote=\count505
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(X:\MiKTeX\tex/latex/hyperref\hxetex.def
+File: hxetex.def 2022-06-20 v7.00s Hyperref driver for XeTeX
+
+(X:\MiKTeX\tex/generic/stringenc\stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box118
+\c@Hy@AnnotLevel=\count506
+\HyField@AnnotCount=\count507
+\Fld@listcount=\count508
+\c@bookmark@seq@number=\count509
+
+(X:\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(X:\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(X:\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip119
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'polyglossia' package.
- (thesis.aux (includes/MA-titlepage.aux)
-LaTeX Info: Redefining \rmfamily on input line 12.
-LaTeX Info: Redefining \sffamily on input line 12.
-LaTeX Info: Redefining \ttfamily on input line 12.
+ (thesis.aux
+(includes/MA-titlepage.aux)
+LaTeX Info: Redefining \rmfamily on input line 26.
+LaTeX Info: Redefining \sffamily on input line 26.
+LaTeX Info: Redefining \ttfamily on input line 26.
+ (includes/abstract.aux)
+(includes/acknowledgements.aux) (chapters/introduction.aux)
 
-(includes/abstract.aux) (includes/acknowledgements.aux)
-(chapters/introduction.aux) (chapters/relatedworks.aux)
-(chapters/fundamentals.aux) (chapters/methods.aux) (chapters/results.aux)
-(chapters/discussion.aux) (includes/eidesstattlicheErklaerung.aux))
+LaTeX Warning: Label `chap:introduction' multiply defined.
+
+
+LaTeX Warning: Label `sec:sustainability' multiply defined.
+
+
+LaTeX Warning: Label `fig:sustainGoals' multiply defined.
+
+
+LaTeX Warning: Label `subsec:sustainabilityGoals' multiply defined.
+
+
+LaTeX Warning: Label `subsec:nationalGoals' multiply defined.
+
+
+LaTeX Warning: Label `sec:powerConsumption' multiply defined.
+
+(chapters/relatedworks.aux)
+
+LaTeX Warning: Label `chap:relatedworks' multiply defined.
+
+
+LaTeX Warning: Label `sec:co2works' multiply defined.
+
+
+LaTeX Warning: Label `tab:scopes' multiply defined.
+
+
+LaTeX Warning: Label `sec:potential' multiply defined.
+
+(chapters/fundamentals.aux)
+
+LaTeX Warning: Label `chap:fundamentals' multiply defined.
+
+
+LaTeX Warning: Label `sec:vflux' multiply defined.
+
+
+LaTeX Warning: Label `tab:en50160' multiply defined.
+
+
+LaTeX Warning: Label `sec:current' multiply defined.
+
+
+LaTeX Warning: Label `fig:lcs_block' multiply defined.
+
+(chapters/methods.aux)
+
+LaTeX Warning: Label `chap:methods' multiply defined.
+
+
+LaTeX Warning: Label `tab:allnet_data' multiply defined.
+
+
+LaTeX Warning: Label `lst:allnet_rest' multiply defined.
+
+
+LaTeX Warning: Label `fig:xml_data' multiply defined.
+
+
+LaTeX Warning: Label `tab:counts' multiply defined.
+
+
+LaTeX Warning: Label `db_tables' multiply defined.
+
+
+LaTeX Warning: Label `fig:information_flow_producer' multiply defined.
+
+
+LaTeX Warning: Label `fig:information_flow_consumer' multiply defined.
+
+
+LaTeX Warning: Label `tab:movinghead' multiply defined.
+
+
+LaTeX Warning: Label `lst:eval' multiply defined.
+
+
+LaTeX Warning: Label `tab:result' multiply defined.
+
+
+LaTeX Warning: Label `sec:metrics' multiply defined.
+
+
+LaTeX Warning: Label `subsec:idle' multiply defined.
+
+(chapters/results.aux)
+
+LaTeX Warning: Label `chap:results' multiply defined.
+
+
+LaTeX Warning: Label `eq:max' multiply defined.
+
+
+LaTeX Warning: Label `eq:avg' multiply defined.
+
+
+LaTeX Warning: Label `tab:PCMon' multiply defined.
+
+
+LaTeX Warning: Label `tab:devices' multiply defined.
+
+
+LaTeX Warning: Label `subsec:insights' multiply defined.
+
+
+LaTeX Warning: Label `sec:visuals' multiply defined.
+
+
+LaTeX Warning: Label `fig:util_hm' multiply defined.
+
+
+LaTeX Warning: Label `subsec:RPMT' multiply defined.
+
+(chapters/discussion.aux)
+
+LaTeX Warning: Label `chap:discussion' multiply defined.
+
+
+LaTeX Warning: Label `sec:datadisscussion' multiply defined.
+
+(includes/eidesstattlicheErklaerung.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 124.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 125.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-24.
-
-(X:\MiKTeX\tex/latex/base\ts1cmr.fd
+25.
+ (X:\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-Package scrbase Info: activating english \partname on input line 124.
-Package scrbase Info: activating english \chaptername on input line 124.
-Package scrbase Info: activating english \appendixname on input line 124.
-Package scrbase Info: activating english \figurename on input line 124.
-Package scrbase Info: activating english \tablename on input line 124.
-Package scrbase Info: activating english \contentsname on input line 124.
-Package scrbase Info: activating english \listfigurename on input line 124.
-Package scrbase Info: activating english \listtablename on input line 124.
-Package scrbase Info: activating english \bibname on input line 124.
-Package scrbase Info: activating english \indexname on input line 124.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+Package scrbase Info: activating english \partname on input line 125.
+Package scrbase Info: activating english \chaptername on input line 125.
+Package scrbase Info: activating english \appendixname on input line 125.
+Package scrbase Info: activating english \figurename on input line 125.
+Package scrbase Info: activating english \tablename on input line 125.
+Package scrbase Info: activating english \contentsname on input line 125.
+Package scrbase Info: activating english \listfigurename on input line 125.
+Package scrbase Info: activating english \listtablename on input line 125.
+Package scrbase Info: activating english \bibname on input line 125.
+Package scrbase Info: activating english \indexname on input line 125.
 The property list \__xpg_alias contains the pairs (without outer braces):
 >  {latex/target}  =>  {latex}
 >  {english/target}  =>  {english}
@@ -1247,10 +1486,11 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
  (thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 124.
-Package biblatex Info: Reference segment=0 on input line 124.
-\c@lstlisting=\count497
+Package biblatex Info: Reference section=0 on input line 125.
+Package biblatex Info: Reference segment=0 on input line 125.
+\c@lstlisting=\count510
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
 (X:\MiKTeX\tex/latex/caption\ltcaption.sty
@@ -1267,14 +1507,31 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 
+)
+Package hyperref Info: Link coloring OFF on input line 125.
+ (thesis.out) (thesis.out)
+\@outlinefile=\write7
+\openout7 = `thesis.out'.
 
-(X:\MiKTeX\tex/latex/base\atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi^^Jpac
-kage with kernel methods
+Class scrbook Info: loading recommended package `bookmark'.
+(scrbook)           Using `bookmark' together with `hyperref' is recommended,
+(scrbook)           because of handling of possible bookmark level gaps.
+(scrbook)           You can avoid loading `bookmark' with KOMA-Script option
+(scrbook)           `bookmarkpackage=false' before \begin{document} and
+(scrbook)           you can avoid this message adding:
+(scrbook)             \usepackage{bookmark}
+(scrbook)           before \begin{document} on input line 125.
+
+(X:\MiKTeX\tex/latex/bookmark\bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+
+(X:\MiKTeX\tex/latex/bookmark\bkm-dvipdfm.def
+File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
+\BKM@id=\count511
 ))
-LaTeX Info: Redefining \rmfamily on input line 124.
-LaTeX Info: Redefining \sffamily on input line 124.
-LaTeX Info: Redefining \ttfamily on input line 124.
+LaTeX Info: Redefining \rmfamily on input line 125.
+LaTeX Info: Redefining \sffamily on input line 125.
+LaTeX Info: Redefining \ttfamily on input line 125.
 \openout2 = `includes/MA-titlepage.aux'.
 
  (includes/MA-titlepage.tex
@@ -1305,14 +1562,14 @@ LaTeX Info: Redefining \ttfamily on input line 1.
 
 
 
-])
-\tf@toc=\write7
-\openout7 = `thesis.toc'.
+] [3])
+\tf@toc=\write8
+\openout8 = `thesis.toc'.
 
- [3]
+ [4]
 \openout2 = `includes/abstract.aux'.
 
- (includes/abstract.tex) [4
+ (includes/abstract.tex) [5
 
 
 
@@ -1320,7 +1577,7 @@ LaTeX Info: Redefining \ttfamily on input line 1.
 \openout2 = `includes/acknowledgements.aux'.
 
 
-(includes/acknowledgements.tex) [5
+(includes/acknowledgements.tex) [6
 
 
 
@@ -1330,7 +1587,7 @@ LaTeX Info: Redefining \ttfamily on input line 1.
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
- [6
+ [7
 
 
 
@@ -1338,24 +1595,24 @@ LaTeX Info: Redefining \ttfamily on input line 1.
 
 
 ])
-\tf@lof=\write8
-\openout8 = `thesis.lof'.
+\tf@lof=\write9
+\openout9 = `thesis.lof'.
 
- [7] (thesis.lot
+ [8] (thesis.lot
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
- [8
+)
+\tf@lot=\write10
+\openout10 = `thesis.lot'.
+
+ [9
 
 
 
 
-])
-\tf@lot=\write9
-\openout9 = `thesis.lot'.
-
-
-[9]
+]
+[10]
 
 Class scrbook Warning: \float@listhead detected!
 (scrbook)              Implementation of \float@listhead became
@@ -1367,13 +1624,13 @@ Class scrbook Warning: \float@listhead detected!
 (scrbook)              Loading of package `scrhack' may help to
 (scrbook)              avoid this warning, if you are using a
 (scrbook)              a package that still implements the
-(scrbook)              deprecated \float@listhead interface on input line 157.
+(scrbook)              deprecated \float@listhead interface on input line 158.
 
 (thesis.lol)
-\tf@lol=\write10
-\openout10 = `thesis.lol'.
+\tf@lol=\write11
+\openout11 = `thesis.lol'.
 
- [10
+ [11
 
 
 
@@ -1464,14 +1721,26 @@ File: images//GOAL_13_TARGET_13.3.png Graphic file (type bmp)
 
  (chapters/relatedworks.tex
 chapter 2.
+
+LaTeX Warning: Reference `sec:officedata' on page 6 undefined on input line 2.
+
+
+LaTeX Warning: Reference `subsec:software' on page 6 undefined on input line 5.
+
+
 [6
 
 
 
 
 
-] [7])
-Underfull \hbox (badness 10000) in paragraph at lines 31--166
+]
+
+LaTeX Warning: Reference `subsec:footprint' on page 7 undefined on input line 1
+0.
+
+[7])
+Underfull \hbox (badness 10000) in paragraph at lines 31--167
 
  []
 
@@ -1480,22 +1749,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--166
 
  (chapters/fundamentals.tex
 chapter 3.
+
+LaTeX Warning: Reference `sec:measurement' on page 10 undefined on input line 2
+.
+
+
+LaTeX Warning: Reference `eq:electric formula' on page 10 undefined on input li
+ne 5.
+
 [10
 
 
 
 
 
-] [11] [12]
+]
+
+LaTeX Warning: Reference `eq:electric formula' on page 11 undefined on input li
+ne 37.
+
+[11]
+
+LaTeX Warning: Reference `fig:hall_sensor_block' on page 12 undefined on input 
+line 42.
+
+
+LaTeX Warning: Reference `eq:hall_formula' on page 12 undefined on input line 4
+2.
+
+[12]
+
+LaTeX Warning: Reference `eq:hall_formula_rearranged' on page 13 undefined on i
+nput line 47.
+
 File: images/hall_sensor2.png Graphic file (type bmp)
 <images/hall_sensor2.png>
 File: images/lcs_block_diagram.png Graphic file (type bmp)
 <images/lcs_block_diagram.png>
- [13] [14] [15])
+[13] [14] [15])
 \openout2 = `chapters/methods.aux'.
 
  (chapters/methods.tex
 chapter 4.
+
+LaTeX Warning: Reference `subsec:hardware' on page 16 undefined on input line 2
+.
+
+
+LaTeX Warning: Reference `subsec:software' on page 16 undefined on input line 2
+.
+
+
+LaTeX Warning: Reference `subsec:hardware' on page 16 undefined on input line 6
+.
+
+
+LaTeX Warning: Reference `subsec:software' on page 16 undefined on input line 6
+.
+
+
+LaTeX Warning: Reference `fig:schema' on page 16 undefined on input line 9.
+
 File: images/room_schematic.png Graphic file (type bmp)
 <images/room_schematic.png>
 [16
@@ -1507,16 +1821,39 @@ File: images/room_schematic.png Graphic file (type bmp)
 
 ] [17] (X:\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [18] [19]
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 52.
+ [18] [19]
 (X:\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (X:\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [20]
+)
+
+LaTeX Warning: Reference `subsec:software' on page 20 undefined on input line 9
+6.
+
+[20]
+
+LaTeX Warning: Reference `tab:access' on page 21 undefined on input line 149.
+
+
+LaTeX Warning: Reference `subsec:software' on page 21 undefined on input line 1
+49.
+
+
+LaTeX Warning: Reference `subsec:software' on page 21 undefined on input line 1
+50.
+
+
+LaTeX Warning: Reference `fig:docker_overview' on page 21 undefined on input li
+ne 165.
+
 File: images/Docker_Services_Overview.png Graphic file (type bmp)
 <images/Docker_Services_Overview.png>
- [21] [22] [23]
+[21] [22] [23]
 Overfull \hbox (7.54512pt too wide) in paragraph at lines 174--184
 [] 
  []
@@ -1537,14 +1874,41 @@ File: images/consumer_flow.png Graphic file (type bmp)
  [28] [29] (X:\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
+
+LaTeX Warning: Reference `eq:idle' on page 30 undefined on input line 268.
+
 [30]
+
+LaTeX Warning: Reference `fig:wwcr' on page 31 undefined on input line 274.
+
 File: images/wwcr_plot.png Graphic file (type bmp)
 <images/wwcr_plot.png>
- [31] [32]) [33] [34]
+
+LaTeX Warning: Reference `eq:wwcr' on page 31 undefined on input line 280.
+
+[31]) [32] [33] [34]
 \openout2 = `chapters/results.aux'.
 
  (chapters/results.tex
 chapter 5.
+
+LaTeX Warning: Reference `sec:results' on page 35 undefined on input line 3.
+
+
+LaTeX Warning: Reference `subsec:result_tables' on page 35 undefined on input l
+ine 3.
+
+
+LaTeX Warning: Reference `subsec:software' on page 35 undefined on input line 5
+.
+
+
+LaTeX Warning: Reference `subsec:result_tables' on page 35 undefined on input l
+ine 5.
+
+
+LaTeX Warning: Reference `eq:min' on page 35 undefined on input line 5.
+
 [35
 
 
@@ -1553,7 +1917,17 @@ chapter 5.
 
 ]
 
+LaTeX Warning: Reference `tab:user1' on page 36 undefined on input line 19.
+
+
 LaTeX Warning: Float too large for page by 26.99931pt on input line 70.
+
+
+LaTeX Warning: Reference `tab:sensor' on page 36 undefined on input line 71.
+
+
+LaTeX Warning: Reference `tab:sensor_cont' on page 36 undefined on input line 7
+1.
 
 
 Overfull \hbox (52.70116pt too wide) in paragraph at lines 75--102
@@ -1561,68 +1935,43 @@ Overfull \hbox (52.70116pt too wide) in paragraph at lines 75--102
  []
 
 
+LaTeX Warning: Reference `tab:sensor_cont' on page 36 undefined on input line 1
+02.
+
+
+LaTeX Warning: Reference `tab:sensor_cont' on page 36 undefined on input line 1
+02.
+
+
 Overfull \hbox (2.44514pt too wide) in paragraph at lines 107--122
  [][] 
  []
 
 
-Overfull \hbox (90.3932pt too wide) in paragraph at lines 128--165
- [][] 
- []
+LaTeX Warning: Reference `tab:sensor' on page 36 undefined on input line 122.
 
 
-Overfull \hbox (90.3932pt too wide) in paragraph at lines 128--165
- [] 
- []
+LaTeX Warning: Reference `tab:sensor' on page 36 undefined on input line 122.
 
 
-Overfull \hbox (90.3932pt too wide) in paragraph at lines 128--165
- [] 
- []
+LaTeX Warning: Reference `tab:multi_wp' on page 36 undefined on input line 125.
 
 
-Overfull \hbox (90.3932pt too wide) in paragraph at lines 170--198
- [][] 
- []
+
+LaTeX Warning: Reference `tab:dual_workplace' on page 36 undefined on input lin
+e 125.
 
 
-Overfull \hbox (90.3932pt too wide) in paragraph at lines 170--198
- [] 
- []
+LaTeX Warning: Reference `tab:singleworkplace' on page 36 undefined on input li
+ne 125.
 
 
-Overfull \hbox (90.3932pt too wide) in paragraph at lines 170--198
- [] 
- []
+LaTeX Warning: Reference `tab:singleworkplace' on page 36 undefined on input li
+ne 125.
 
 
-Overfull \hbox (15.00919pt too wide) in paragraph at lines 202--221
+Underfull \hbox (badness 10000) in paragraph at lines 202--221
 [][]
- []
-
-
-Overfull \hbox (15.00919pt too wide) in paragraph at lines 202--221
-[] 
- []
-
-
-Overfull \hbox (13.94118pt too wide) in paragraph at lines 227--243
- [][] 
- []
-
-
-Overfull \hbox (13.94118pt too wide) in paragraph at lines 244--268
- [][] 
- []
-
-
-Overfull \hbox (13.94118pt too wide) in paragraph at lines 273--297
- [][] 
- []
-
-
-Overfull \hbox (13.94118pt too wide) in paragraph at lines 273--297
- [] 
  []
 
 [36]
@@ -1649,7 +1998,63 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+LaTeX Warning: Reference `eq:idle' on page 42 undefined on input line 301.
+
+
+LaTeX Warning: Reference `tab:idle' on page 42 undefined on input line 301.
+
 [42] [43]
+
+LaTeX Warning: Reference `fig:user_comparison' on page 44 undefined on input li
+ne 396.
+
+
+LaTeX Warning: Reference `fig:user_comparison' on page 44 undefined on input li
+ne 396.
+
+
+LaTeX Warning: Reference `subsec:result_tables' on page 44 undefined on input l
+ine 397.
+
+
+LaTeX Warning: Reference `tab:user1' on page 44 undefined on input line 397.
+
+
+LaTeX Warning: Reference `fig:office_consumption' on page 44 undefined on input
+ line 398.
+
+
+LaTeX Warning: Reference `fig:pc_hm' on page 44 undefined on input line 398.
+
+
+LaTeX Warning: Reference `fig:mon_hm' on page 44 undefined on input line 398.
+
+
+LaTeX Warning: Reference `fig:printer_hm' on page 44 undefined on input line 39
+8.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.399 \begin
+            {figure}[ht]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.399 \begin
+            {figure}[ht]
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 File: images/heatmaps/user_1_wholeday_cal.png Graphic file (type bmp)
 <images/heatmaps/user_1_wholeday_cal.png>
 File: images/heatmaps/user_1_workday_cal.png Graphic file (type bmp)
@@ -1711,8 +2116,11 @@ File: images/heatmaps/user_15_wholeday_cal.png Graphic file (type bmp)
 File: images/heatmaps/user_15_workday_cal.png Graphic file (type bmp)
 <images/heatmaps/user_15_workday_cal.png>
 
-
 LaTeX Warning: Float too large for page by 15.36038pt on input line 433.
+
+
+LaTeX Warning: Reference `fig:office_consumption' on page 44 undefined on input
+ line 434.
 
 File: images/heatmaps/workday_cal.png Graphic file (type bmp)
 <images/heatmaps/workday_cal.png>
@@ -1720,6 +2128,12 @@ File: images//workday_cal_edit2.png Graphic file (type bmp)
 <images//workday_cal_edit2.png>
 File: images/heatmaps/devicetype_PC_workday_cal.png Graphic file (type bmp)
 <images/heatmaps/devicetype_PC_workday_cal.png>
+
+LaTeX Warning: Reference `fig:pc_hm' on page 44 undefined on input line 449.
+
+
+LaTeX Warning: Reference `fig:mon_hm' on page 44 undefined on input line 449.
+
 File: images/heatmaps/devicetype_Monitor_workday_cal.png Graphic file (type bmp
 )
 <images/heatmaps/devicetype_Monitor_workday_cal.png>
@@ -1730,6 +2144,22 @@ File: images/heatmaps/devicetype_Printer_workday_cal.png Graphic file (type bmp
 File: images/heatmaps/devicetype_Utility_workday_cal.png Graphic file (type bmp
 )
 <images/heatmaps/devicetype_Utility_workday_cal.png>
+
+
+LaTeX Warning: Reference `subsec:software' on page 46 undefined on input line 4
+73.
+
+
+LaTeX Warning: Reference `fig:dashboard' on page 46 undefined on input line 473
+.
+
+
+LaTeX Warning: Reference `tab:access' on page 46 undefined on input line 474.
+
+
+LaTeX Warning: Reference `subsec:hardware' on page 46 undefined on input line 4
+74.
+
 File: images/RPMT.png Graphic file (type bmp)
 <images/RPMT.png>
 )
@@ -1747,7 +2177,12 @@ chapter 6.
 
 
 
-] [55] [56] [57] [58]) [59] (thesis.acr) (thesis.gls [60
+] [55] [56]
+
+LaTeX Warning: Reference `fig:user_comparison' on page 57 undefined on input li
+ne 24.
+
+[57] [58]) [59] (thesis.acr) (thesis.gls [60
 
 
 
@@ -1768,10 +2203,10 @@ nity. Broadly
 ]
 chapter without number
 
-Overfull \hbox (7.9188pt too wide) in paragraph at lines 187--187
+Overfull \hbox (7.9188pt too wide) in paragraph at lines 188--188
 []\TU/lmr/m/n/12 atmosfair. \TU/lmr/m/it/12 Paris aligned annual carbon budget\
-TU/lmr/m/n/12 . 2022. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : $[][][][][] [] [] [] 
-[][][] [] [][][][][][][][][] []
+TU/lmr/m/n/12 . 2022. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : []$[][][][][] [] [] [
+] [][][] [] [][][][][][][][][] []
  []
 
 [62
@@ -1780,58 +2215,58 @@ TU/lmr/m/n/12 . 2022. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : $[][][][][] [] [] []
 
 
 ] [63]
-Overfull \hbox (41.74788pt too wide) in paragraph at lines 187--187
-\TU/lmr/m/n/12 p. 20150813. \TU/lmr/m/sc/12 doi\TU/lmr/m/n/12 : $[][] [] [][][]
-[] [] [][][][] [] [][][][] [] [][][][]$. eprint: $[][][][][] [] [] [] [][][][][
-][][][][][][][][][][][][][][][][][] []
+Overfull \hbox (41.74788pt too wide) in paragraph at lines 188--188
+\TU/lmr/m/n/12 p. 20150813. \TU/lmr/m/sc/12 doi\TU/lmr/m/n/12 : []$[][] [] [][]
+[][] [] [][][][] [] [][][][] [] [][][][]$[]. eprint: []$[][][][][] [] [] [] [][
+][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (16.33888pt too wide) in paragraph at lines 187--187
+Overfull \hbox (16.33888pt too wide) in paragraph at lines 188--188
 [][][] [] [][][] [] [][][] [] [][] [] [][][][] [] [][][][] [] [][][][] [] [][][
-][]$\TU/lmr/m/n/12 . \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : $[][][][][] [] [] [] [
-][][][][][][][][][][][][][][][][][][][][][] []
+][]$[]\TU/lmr/m/n/12 . \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : []$[][][][][] [] [] 
+[] [][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 [64]
-Overfull \hbox (16.25285pt too wide) in paragraph at lines 187--187
+Overfull \hbox (16.25285pt too wide) in paragraph at lines 188--188
 []\TU/lmr/m/n/12 Umweltbundesamt. \TU/lmr/m/it/12 Emissionen von Wärmekraftwerk
 en und anderen Verbrennungsan-
  []
 
 
-Overfull \hbox (17.03072pt too wide) in paragraph at lines 187--187
+Overfull \hbox (17.03072pt too wide) in paragraph at lines 188--188
 \TU/lmr/m/it/12 lagen\TU/lmr/m/n/12 . 2022. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 :
- $[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][] [] [][] [] [][][
-][][] [] [][][][][][][] [] [][][][][][][][][][] [][]
+ []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][] [] [][] [] [][
+][][][] [] [][][][][][][] [] [][][][][][][][][][] [][]
  []
 
 
-Overfull \hbox (91.91644pt too wide) in paragraph at lines 187--187
+Overfull \hbox (91.91644pt too wide) in paragraph at lines 188--188
 [][][] [][] [][][][][][][][][][][][][][][][][] [][] [][][][][][][] [] [][][] []
 [] [][][][][][][][][][][][][][][][][][][][][][] [][] [][][] [][] [][][][][][][]
 [][][][][][][][][][][][][] [][]
  []
 
 
-Overfull \hbox (53.00694pt too wide) in paragraph at lines 187--187
+Overfull \hbox (53.00694pt too wide) in paragraph at lines 188--188
 []\TU/lmr/m/n/12 Umweltbundesamt. \TU/lmr/m/it/12 Nationale Treibhausgas Invent
-ur\TU/lmr/m/n/12 . \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : $[][][][][] [] [] [] [][
-][] [] [][][][][][][][][][][][][][][] []
+ur\TU/lmr/m/n/12 . \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : []$[][][][][] [] [] [] [
+][][] [] [][][][][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (49.32314pt too wide) in paragraph at lines 187--187
+Overfull \hbox (49.32314pt too wide) in paragraph at lines 188--188
 []\TU/lmr/m/n/12 United Nations Voluntary National Review 2021. \TU/lmr/m/sc/12
- url\TU/lmr/m/n/12 : $[][][][][] [] [] [] [][][][][][][][][][][][][][][][][][][
-][][][] []
+ url\TU/lmr/m/n/12 : []$[][][][][] [] [] [] [][][][][][][][][][][][][][][][][][
+][][][][] []
  []
 
 
-Overfull \hbox (12.51498pt too wide) in paragraph at lines 187--187
-[]\TU/lmr/m/n/12 Sebastian Wilhelm. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : $[][][]
-[][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][][
-][][][][][][][][][][][]$
+Overfull \hbox (12.51498pt too wide) in paragraph at lines 188--188
+[]\TU/lmr/m/n/12 Sebastian Wilhelm. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : []$[][]
+[][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][
+][][][][][][][][][][][][]$[]
  []
 
 [65] [66]
@@ -1915,32 +2350,38 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {newzealand/variant}  =>  {newzealand}
 >  {newzealand/options}  =>  {variant=newzealand}.
  (thesis.aux (includes/MA-titlepage.aux)
-LaTeX Info: Redefining \rmfamily on input line 12.
-LaTeX Info: Redefining \sffamily on input line 12.
-LaTeX Info: Redefining \ttfamily on input line 12.
+LaTeX Info: Redefining \rmfamily on input line 26.
+LaTeX Info: Redefining \sffamily on input line 26.
+LaTeX Info: Redefining \ttfamily on input line 26.
  (includes/abstract.aux)
 (includes/acknowledgements.aux) (chapters/introduction.aux)
 (chapters/relatedworks.aux) (chapters/fundamentals.aux) (chapters/methods.aux)
 (chapters/results.aux) (chapters/discussion.aux)
 (includes/eidesstattlicheErklaerung.aux))
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
 
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                thesis
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32128 strings out of 410636
- 704736 string characters out of 2822900
- 1812445 words of memory out of 3000000
- 52704 multiletter control sequences out of 15000+600000
- 475347 words of font info for 71 fonts, out of 8000000 for 9000
+ 38653 strings out of 410636
+ 807107 string characters out of 2822900
+ 1916065 words of memory out of 3000000
+ 59158 multiletter control sequences out of 15000+600000
+ 475707 words of font info for 72 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 108i,20n,131p,10603b,5281s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 108i,20n,131p,10603b,5298s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on thesis.pdf (77 pages).
+Output written on thesis.pdf (78 pages).
