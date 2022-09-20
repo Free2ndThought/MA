@@ -3,11 +3,13 @@ from typing import Tuple, Dict
 
 import numpy
 import pandas as pandas
+import pylatex
 import sqlalchemy.orm
 from sqlalchemy import Column, MetaData, ForeignKey, create_engine, String, func, Table
 from sqlalchemy.orm import Session
 from sqlalchemy.types import Integer
 
+from pylatex import Table, MultiColumn, MultiRow
 from base import Base
 from devices import Device, DeviceType, get_devices, get_device_types
 from feedback import Feedbackpost
@@ -85,6 +87,32 @@ def min_max_avg_consumption_per_device_type(measurement_table_map: Dict, device:
         max_consumption_query).scalar(), dbsession.execute(avg_consumption_query).scalar()
 
 
+def generate_idle_report(meta_table_map):
+    meta_idle_report = ""
+    tab = pylatex.Tabular('|l|c|c|c|c|c|')
+    tab.add_hline()
+    tab.add_row("Sensor", "Device", "Workplace", "Workplace Type", "Idle Time", "Idle Time in %")
+    tab.add_hline()
+    for sensor in session.query(Sensor).all():
+        if sensor.name != "":
+            meta_table = meta_table_map[sensor.id]
+            # get all devices of the sensor
+            devices = session.query(Device).filter(Device.sensor_id == sensor.id).all()
+            for device in devices:
+                # get all workplaces of the sensor
+                device_type = session.query(DeviceType).filter(DeviceType.id == device.type).first()
+                workplace = session.query(Workplace).filter(Workplace.id == device.workplace).first()
+                workplace_type = session.query(WorkplaceType).filter(WorkplaceType.id == workplace.type).first()
+                idle_time = session.query(func.count(meta_table.name).filter(meta_table.c.avg_power < 1)).scalar()
+                total_time = session.query(func.count(meta_table.c.avg_power)).scalar()
+                tab.add_row(f"Sensor {sensor.id}", device_type.description, workplace.id, workplace_type.description,
+                            idle_time, f"{(idle_time / total_time):.2f} \%")
+                tab.add_hline()
+
+    print(tab.dumps())
+    return tab.dumps()
+
+
 def compute_results(metavalues=True):
     report = ""
     metareport = ""
@@ -94,31 +122,37 @@ def compute_results(metavalues=True):
     meta_table_map = {}
     for sensor in session.query(Sensor).all():
         if sensor.name != "":
-            measurement_table_map[sensor.id] = Table(sensor.name, metadata, autoload_with=engine)
-            meta_table_map[sensor.id] = Table(sensor.meta_name, metadata, autoload_with=engine)
+            #measurement_table_map[sensor.id] = sqlalchemy.Table(sensor.name, metadata, autoload_with=engine)
+            meta_table_map[sensor.id] = sqlalchemy.Table(sensor.meta_name, metadata, autoload_with=engine)
 
     # min, max and average consumption per device type
-    metareport, report = device_and_type_report(measurement_table_map, meta_table_map, metareport, metavalues, report)
+    # metareport, report = device_and_type_report(measurement_table_map, meta_table_map, metareport, metavalues, report)
 
     # min, max and average consumption per workplace type
-    metareport, report = workplace_and_type_report(measurement_table_map, meta_table_map, metareport, metavalues,
-                                                   report)
+    # metareport, report = workplace_and_type_report(measurement_table_map, meta_table_map, metareport, metavalues,
+    # report)
 
     # min, max and average consumption per workplace on weekdays
-    metareport, report = days_and_workdays_report(measurement_table_map, meta_table_map, metareport, metavalues, report)
+    # metareport, report = days_and_workdays_report(measurement_table_map, meta_table_map, metareport, metavalues, report)
 
-    with open("results.txt", "w") as f:
-        f.write(report)
-    if metavalues:
-        with open("meta_results.txt", "w") as f:
-            f.write(metareport)
+    idle_report = generate_idle_report(meta_table_map)
+
+    if idle_report != "":
+        with open("idle_report.tex", "w") as file:
+            file.write(idle_report)
+    #
+    # with open("results.txt", "w") as f:
+    #     f.write(report)
+    # if metavalues:
+    #     with open("meta_results.txt", "w") as f:
+    #         f.write(metareport)
 
 
 def device_and_type_report(measurement_table_map, meta_table_map, metareport, metavalues, report):
     for device_type in session.query(DeviceType).all():
         report += f"Device type: {device_type.description}\n"
         mins_per_device_type, maxs_per_device_type, avgs_per_device_type, meta_mins_per_device_type, meta_maxs_per_device_type, meta_avgs_per_device_type = (
-        [] for i in range(6))
+            [] for i in range(6))
         if metavalues:
             metareport += f"Device type: {device_type.description}\n"
         for device in session.query(Device).filter(Device.type == device_type.id, Sensor.id == Device.sensor_id):
@@ -157,13 +191,13 @@ def workplace_and_type_report(measurement_table_map, meta_table_map, metareport,
     for workplace_type in session.query(WorkplaceType).all():
         report += f"Workplace type: {workplace_type.description}\n"
         mins_per_workplace_type, maxs_per_workplace_type, avgs_per_workplace_type, meta_mins_per_workplace_type, meta_maxs_per_workplace_type, meta_avgs_per_workplace_type = (
-        [] for i in range(6))
+            [] for i in range(6))
         if metavalues:
             metareport += f"Workplace type: {workplace_type.description}\n"
         for workplace in session.query(Workplace).filter(workplace_type.id == Workplace.type):
             report += f"  Workplace: {str(workplace.id)} {workplace_type.description}\n"
             mins_per_workplace, maxs_per_workplace, avgs_per_workplace, meta_mins_per_workplace, meta_maxs_per_workplace, meta_avgs_per_workplace = (
-            [] for i in range(6))
+                [] for i in range(6))
             if metavalues:
                 metareport += f"  Workplace: {str(workplace.id)} {workplace_type.description}\n"
             for device in session.query(Device).filter(Device.workplace == workplace.id):
@@ -293,7 +327,7 @@ if __name__ == '__main__':
 
     session = Session()
 
-    insert_information()
+    #insert_information()
     start = datetime.now()
     compute_results()
     end = datetime.now()

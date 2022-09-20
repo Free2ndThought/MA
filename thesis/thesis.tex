@@ -1,9 +1,7 @@
 % !TeX spellcheck = de
 % !TeX encoding = UTF-8
 
-% COMPILE WITH:
-% `latexmk`
-% You need lualatex and biber (in all TeXLive distributions)
+%!TEX TS-program = xelatex
 
 \documentclass[
     numbers=noenddot,
@@ -33,15 +31,15 @@
 \usepackage{multicol}
 \usepackage{multirow}
 
-\usepackage[]{scrlayer-scrpage}
+
+\usepackage[singlespacing=true]{scrlayer-scrpage}
 
 % better bibliography (biblatex style)
 % use biber to compile
-\usepackage[citestyle=alphabetic, bibstyle=alphabetic, sorting=nyt, backend=biber, language=english, backref=true, maxcitenames=2]{biblatex}
-
+\usepackage[citestyle=numeric, bibstyle=numeric, sorting=nyt, backend=biber, language=english, backref=true, maxcitenames=2]{biblatex}
 % better quotes
 % use \enquote{text}
-\usepackage[autostyle,english=american,german=quotes]{csquotes}
+\usepackage[autostyle,english=american,german=quotes, strict=true]{csquotes}
 \addbibresource{bibliography.bib}
 
 % appendix
@@ -51,7 +49,42 @@
 \graphicspath{{images/}}
 
 % YOUR PACKAGES
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\linespread{0.9}\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=4
+}
+
+\usepackage{enumitem}
+\setlist{nosep}
+\usepackage{breqn}
+\usepackage{multirow}
+\lstset{style=mystyle}
 \usepackage{subcaption}
+\usepackage[justification=centering]{caption}
+\usepackage{pdfpages}
 \newlength{\imagewidth}
 \newcommand{\subgraphics}[2]{
 \settowidth{\imagewidth}{\includegraphics[height=4cm]{#1}}%
@@ -61,11 +94,12 @@
 \end{subfigure}%
 }
 \usepackage[acronym,toc]{glossaries}
+\loadglsentries{includes/glossary}
 \makeglossaries
-\include{includes/glossary}
+
 
 % Title
-\title{Energy ++: measurement of energy consumption in the context of office workplaces}
+\title{Measurement of Energy-efficiency in the Context of Office Workplaces}
 
 % Author
 \author{Manuel Lehner}
@@ -78,15 +112,16 @@
 \newcommand{\thesisType}{Masterarbeit}
 
 \makeatletter
-\newcommand{\thetitle}{\@title}
-\newcommand{\theauthor}{\@author}
-\newcommand{\thedate}{\@date}
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
 \makeatother
 
 \pagestyle{scrheadings}
 
-\begin{document}
+%\usepackage{hyperref}
 
+\begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
 % CHOOSE ACCORDINGLY
@@ -116,6 +151,11 @@
 \listoftables
 \newpage
 
+% -- List of listings
+\thispagestyle{empty}
+\cleardoublepage
+\lstlistoflistings
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mainmatter
 
@@ -123,6 +163,8 @@
 % following IMRaD structure
 % adjust for your liking
 \include{chapters/introduction}
+\include{chapters/relatedworks}
+\include{chapters/fundamentals}
 \include{chapters/methods}
 \include{chapters/results}
 \include{chapters/discussion}
@@ -131,9 +173,9 @@
 \printglossary
 
 % -- Appendix (optional)
-\begin{appendices}
-    \input{appendix.tex}
-\end{appendices}
+%\begin{appendices}
+%    \input{appendix.tex}
+%\end{appendices}
 \newpage
 
 

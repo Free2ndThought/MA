@@ -1,0 +1,33 @@
+\chapter{Related Works}\label{chap:relatedworks}
+As expected by the expansive number of factors contributing to sustainability, the amount of related works is also numerous. The spectrum of different research questions reflect the many facets of the broad topic of sustainability, and needs to be differentiated in the three relevant aspects, as seen in section \ref{sec:powerConsumption}. In \ref{sec:officedata} an excerpt of literature regarding available data in the context of office buildings are shown. Section \ref{sec:co2works} gives an insight into CO$_2$ footprint estimation. Finally in section \ref{sec:potential} a few papers outlining specific efficiency possibilities are shown
+\section{Data Gathering And Office Consumption}\label{sec:officedata}
+The study by Kurt W. Roth et al. \cite{roth} gives a first insight on expected data in an office environment. By calculations of estimated operation hours over a year, the distribution of energy consumption across different device types were quantified and accumulated over an estimated lifetime in commercial buildings.\\
+As a template in gathering and evaluation of measurement data can be seen in the work by S. Wilhelm et al. \cite{wilhelm}. The author created a labeled energy consumption data set to provide training data of private households for algorithms and machine learning in various applications. The hardware setup fits the requirements set by the experiment of this work. Parts of the software described in section \ref{subsec:software}, was built upon the basis that was graciously provided by S. Wilhelm.
+
+\section{\texorpdfstring{CO$_2$ Estimation}{CO2 Estimation}}\label{sec:co2works}
+As CO$_2$ is emitted in various stages of the office life cycle, different aspects can be examined. The work of Suzuki et al. \cite{suzuki} gives a detailed estimation of CO$_2$ impact from construction, through operation until deconstruction using industrial statistics of manufacturers and contractors.
+With respect to energy consumption specifically, the work of R.Saidur \cite{saidur} establishes an estimation of the CO$_2$ footprint created by office buildings in Malaysia. The data was split into general appliances, air conditioning and lighting, to provide a very general overview of consumption in this context. 
+Both works base their CO$_2$ footprint estimation upon conversion tables which relate CO$_2$ generation to their specific energy source. However this approach does not translate equally when considering power consumption. One main reason for this, is the international power grid system, which enables free trade and consumption of energy without regard where said electricity was produced. The \acrfull{emas} proposed by the European Commission determines greenhouse intensity using the \acrfull{ghg}. This protocol is structured similarly to a traditional accounting system, by separating CO$_2$ emissions into three distinct scopes as seen in table \ref{tab:scopes}. To determine CO$_2$ footprint in this manner, it would be necessary to consult the emission report of the university's respective energy provider. As these data points depend on the respective 'Scope 1' values of the provider, a proper estimation could be made referring to CO$_2$ emission data given in their \acrfull{emas} report or, if sufficient non mandatory data is given \cite{report}, data entered into the german \acrfull{prtr}. Each register only requires an annual report \cite{prtr_law}, and are unavailable in the scope of this work. In section \ref{subsec:footprint} a case for the usage of average CO$_2$ consumption will be made.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|ll|}
+		\hline
+		Scope 1: & direct emission due to energy generation, transportation, processing \\
+		& and fugitive emissions
+		\\ \hline
+		Scope 2: & indirect emissions due to consumed purchased electricity,\\
+		& and associated transportation \& distribution costs
+		\\ \hline
+		Scope 3: & (optional) indirect emissions due to further activities \\
+		& upstream in the energy generation supply line, \\
+		&for example drilling and construction of electricity trade companies 
+		\\ \hline
+	\end{tabular}
+	\caption{Scope distinction defined in the \acrfull{ghg} Corporate Standard \cite{ghg}.}
+	\label{tab:scopes}
+\end{table}
+\section{Efficiency Potential}\label{sec:potential} 
+By researching the theoretical potential of energy savings, further interesting principles can be discovered. The article by R. Launder \cite{entropy} determines that all computation produces a minimum change in entropy of a closed computational system, due to irreversible physical processes, greater or equal to $log_e 2 \times k_b \times T$. This is also known as the 'Landauer Limit' or 'Landauer Principle', and was also shown to hold in dedicated experiments, as seen by the publication of J.P.S Peterson et al. \cite{entropy-demo}. While prohibiting real 'zero energy consumption' computations, the theoretical efficiency boundaries are far from limiting the potential efficiency gains through modern interventions\\
+A field study by Victor Zhirnov et al. \cite{min-energy} gave a qualitative overview of energy consumption of different parts of computer processing, with 42\% of energy consumed by Displays, 35\% by computing, 19\% by communication and about 4\% by storage. Furthermore an increase in energy efficiency in processor computation with respect to circuit size was shown, as switching energy per transistor is decreasing. During experimentation, the specific consumption ratios can be compared to the data given here.\\
+In Pereira et al. \cite{Pereira} the power consumption of 26 different programming languages was compared on a small collection of standard problems. The results show a clear superiority of compiled languages compared to interpreted languages in terms of energy efficiency. Although not in every case, the efficiency with respect to time performance correlate very closely to total power consumption. This also means that the quality of work will have great influence in expected outcomes. This could introduce unaccounted differences in consumption patterns\\

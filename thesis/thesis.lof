@@ -1,0 +1,28 @@
+\selectlanguage *{english}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Overview of \acrfullpl {sdg} numbered from 1 to 17, adapted from The 2030 Agenda by Bundesregierung Deutschland, 2022 \blx@tocontentsinit {0}\cite {pic:eu_goals}.\relax }}{2}{}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Collection of targets concerned by energy efficiency adapted from Global Goals, 2022 via https://www.globalgoals.org/resources/\relax }}{4}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Block Diagram of an exemplary hall effect sensor. Recreated from \blx@tocontentsinit {0}\cite {hall_sensor}.\relax }}{14}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Block Diagram of an exemplary linear current hall effect sensor. The box marked with an X is signifying the hall sensor \blx@tocontentsinit {0}\cite {hall_effect_element14}.\relax }}{15}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Room schematic of the office section of the university building.\relax }}{17}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Overview of active docker services within the docker VM\relax }}{23}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Overview of the different database tables. Foreign keys are marked, other concatenations are made using table names or dates. For simplicity, multiples of the measurement and meta tables are omitted\relax }}{27}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Information Flow Producer Service\relax }}{28}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Information Flow Consumer Service\relax }}{29}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Excerpt from manufacturer specifications of the measured device\relax }}{30}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Example illustration of efficiency indication by \gls {wwcr}. By reducing energy wasted during off work time, the total consumption, which is the integral of the function curve, is reduced, even if working hour consumption is higher.\relax }}{32}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces \centering Comparison of the consumption of each user (Row 1-15) over time. Consumption is only considered without weekends with averages during the weekday (left) and working hours (right)\relax }}{50}{}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Heat map of the sum of all sensors during usual office hours (work hours on \glspl {workday}).Above the unedited plot, below an edited version to improve visibility\relax }}{51}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Heat map of the sum of all PC sensors during usual office hours (measured during \glspl {workday})\relax }}{51}{}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Heat map of the sum of all monitor sensors during usual office hours (measured during \glspl {workday})\relax }}{52}{}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Heat map of the sum of all printer sensors during usual office hours (measured during \glspl {workday})\relax }}{52}{}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Heat map of the sum of all utility sensors during usual office hours (measured during \glspl {workday})\relax }}{52}{}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Screenshot of the \acrshort {rpmt} dashboard. From top left to bottom right there are panels showing 5 day comparisons to similar devices, the device type, an overview of annotations, the overview of elapsed idle time of the device. the power consumption as a time series, and the cumulative time series with the respective estimated CO$_2$ footprint\relax }}{53}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,0 +1,25 @@
+\selectlanguage *{english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Scope distinction defined in the \acrfull {ghg} Corporate Standard \blx@tocontentsinit {0}\cite {ghg}.\relax }}{8}{}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces extract of standardization values given in EN 50160 \blx@tocontentsinit {0}\cite {EN50160}.\relax }}{11}{}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces technical data according to the manufacturer\relax }}{18}{}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces average measurement count per 15 minute interval. Rounded to the full integer\relax }}{22}{}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces access ports for the respective docker services. Can be used as suffix after the url energy.uni-passau.de:'suffix'\relax }}{23}{}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Result of the evaluation query in listing \ref {lst:eval}\relax }}{30}{}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Consumption results of user 1 in Watts\relax }}{38}{}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Result table of average \gls {workday}, and weekday consumption of sensor 1 to 24 in Watts. Continuation follows in table \ref {tab:sensor_cont}\relax }}{39}{}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Result table of average \gls {workday}, and weekday consumption of sensor 25 to 37 in Watts. Precursory available in result table \ref {tab:sensor}\relax }}{40}{}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Result table of Workplaces of type multiple (more than 2 potential users)\relax }}{41}{}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Result table of workplaces of type Dual (exactly 2 potential users)\relax }}{42}{}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Result table of workplaces of type single (exactly one potential user)\relax }}{43}{}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Result table showing average consumption of PC and Monitor devices\relax }}{47}{}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Result table showing average consumption of Utility, Printer and Multi devices\relax }}{48}{}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces Overview of the calculated idle times of each device. The Idle Time column shows the number of intervals (15 minutes) with a power reading of less than 1 Watt\relax }}{49}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

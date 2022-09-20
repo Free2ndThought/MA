@@ -1,0 +1,65 @@
+\selectlanguage *{english}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
+\contentsline {section}{\numberline {1.1}Sustainability}{1}{}%
+\contentsline {subsection}{\numberline {1.1.1}Sustainability Targets}{1}{}%
+\contentsline {subsection}{\numberline {1.1.2}National Goal Implementations}{3}{}%
+\contentsline {section}{\numberline {1.2}Power Consumption as a Contributor}{5}{}%
+\contentsline {chapter}{\numberline {2}Related Works}{6}{}%
+\contentsline {section}{\numberline {2.1}Data Gathering And Office Consumption}{6}{}%
+\contentsline {section}{\numberline {2.2}CO$_2$ Estimation}{7}{}%
+\contentsline {section}{\numberline {2.3}Efficiency Potential}{8}{}%
+\contentsline {chapter}{\numberline {3}Physics Fundamentals}{10}{}%
+\contentsline {section}{\numberline {3.1}Physical quantities}{10}{}%
+\contentsline {section}{\numberline {3.2}Voltage Fluctuations}{11}{}%
+\contentsline {section}{\numberline {3.3}Determining Electric Current}{12}{}%
+\contentsline {subsubsection}{\nonumberline Hall Effect}{12}{}%
+\contentsline {section}{\numberline {3.4}Summary}{13}{}%
+\contentsline {chapter}{\numberline {4}Methodology}{16}{}%
+\contentsline {section}{\numberline {4.1}Measurement Equipment}{16}{}%
+\contentsline {subsection}{\numberline {4.1.1}Hardware}{16}{}%
+\contentsline {subsubsection}{\nonumberline Operation}{18}{}%
+\contentsline {subsubsection}{\nonumberline Data Access}{18}{}%
+\contentsline {subsubsection}{\nonumberline Virtual Machine}{21}{}%
+\contentsline {subsection}{\numberline {4.1.2}Software}{21}{}%
+\contentsline {subsubsection}{\nonumberline Producer}{24}{}%
+\contentsline {paragraph}{\nonumberline Pika Consumer}{24}{}%
+\contentsline {paragraph}{\nonumberline Rabbit MQ producer}{25}{}%
+\contentsline {subsubsection}{\nonumberline Consumer}{26}{}%
+\contentsline {paragraph}{\nonumberline Pika Consumer}{26}{}%
+\contentsline {paragraph}{\nonumberline Rabbit MQ Consumer}{26}{}%
+\contentsline {paragraph}{\nonumberline PostgreSQL Database}{27}{}%
+\contentsline {paragraph}{\nonumberline Grafana}{27}{}%
+\contentsline {paragraph}{\nonumberline Adminer DB Management}{28}{}%
+\contentsline {subsubsection}{\nonumberline Reference Measurement}{28}{}%
+\contentsline {paragraph}{\nonumberline The setup}{29}{}%
+\contentsline {paragraph}{\nonumberline The measurement}{29}{}%
+\contentsline {paragraph}{\nonumberline The resulting data set}{29}{}%
+\contentsline {section}{\numberline {4.2}Evaluation Metrics/ \acrfullpl {kpi}}{30}{}%
+\contentsline {subsection}{\numberline {4.2.1}Idle Time of devices}{31}{}%
+\contentsline {subsection}{\numberline {4.2.2}\acrfull {wwcr}}{31}{}%
+\contentsline {subsection}{\numberline {4.2.3}CO$_2$ Footprint}{33}{}%
+\contentsline {chapter}{\numberline {5}Results}{35}{}%
+\contentsline {section}{\numberline {5.1}Result Evaluation}{35}{}%
+\contentsline {subsection}{\numberline {5.1.1}Quantitative Results}{36}{}%
+\contentsline {paragraph}{\nonumberline Idle Time}{42}{}%
+\contentsline {subsection}{\numberline {5.1.2}Key Insights}{43}{}%
+\contentsline {section}{\numberline {5.2}Visualizations}{44}{}%
+\contentsline {subsubsection}{\nonumberline Heat maps}{44}{}%
+\contentsline {subsubsection}{\nonumberline \acrfull {rpmt}}{46}{}%
+\contentsline {chapter}{\numberline {6}Discussion}{54}{}%
+\contentsline {paragraph}{\nonumberline Controlled environment}{55}{}%
+\contentsline {paragraph}{\nonumberline Blinding experiments}{55}{}%
+\contentsline {paragraph}{\nonumberline Counter measurements}{56}{}%
+\contentsline {paragraph}{\nonumberline Improved real time CO2 footprint estimation}{56}{}%
+\contentsline {paragraph}{\nonumberline Incorporating independent measurements}{57}{}%
+\contentsline {section}{\numberline {6.1}Data Discussion}{57}{}%
+\contentsline {section}{\numberline {6.2}Future Work}{58}{}%
+\contentsline {paragraph}{\nonumberline Change of context}{58}{}%
+\contentsline {paragraph}{\nonumberline Widen the scope}{58}{}%
+\contentsline {paragraph}{\nonumberline Adapt the current measurement model}{59}{}%
+\contentsline {paragraph}{\nonumberline Find a way to privatize}{59}{}%
+\contentsline {chapter}{Acronyms}{60}{}%
+\contentsline {chapter}{Glossary}{61}{}%
+\contentsline {chapter}{\nonumberline Bibliography}{62}{}%
+\contentsline {chapter}{\nonumberline Eidesstattliche Erklärung}{67}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

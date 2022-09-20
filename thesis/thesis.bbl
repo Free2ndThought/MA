@@ -1,0 +1,1201 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{co2_footprint}{online}{}
+      \name{author}{1}{}{%
+        {{hash=56c9cb7978703af277e7a0eea78911ef}{%
+           family={Agency},
+           familyi={A\bibinitperiod},
+           given={European\bibnamedelima Environment},
+           giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {European Union}%
+      }
+      \strng{namehash}{56c9cb7978703af277e7a0eea78911ef}
+      \strng{fullhash}{56c9cb7978703af277e7a0eea78911ef}
+      \strng{bibnamehash}{56c9cb7978703af277e7a0eea78911ef}
+      \strng{authorbibnamehash}{56c9cb7978703af277e7a0eea78911ef}
+      \strng{authornamehash}{56c9cb7978703af277e7a0eea78911ef}
+      \strng{authorfullhash}{56c9cb7978703af277e7a0eea78911ef}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{CO2 emission intensity}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.eea.europa.eu/data-and-maps/daviz/co2-emission-intensity-5#tab-googlechartid_chart_11_filters=%7B"rowFilters"%3A%7B%7D%3B"columnFilters"%3A%7B"pre_config_ugeo"%3A%5B"European%20Union%20(current%20composition)"%5D%7D%7D
+      \endverb
+      \verb{url}
+      \verb https://www.eea.europa.eu/data-and-maps/daviz/co2-emission-intensity-5#tab-googlechartid_chart_11_filters=%7B%22rowFilters%22%3A%7B%7D%3B%22columnFilters%22%3A%7B%22pre_config_ugeo%22%3A%5B%22European%20Union%20(current%20composition)%22%5D%7D%7D
+      \endverb
+    \endentry
+    \entry{co2_capita}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c43b7ec5689686a84155aa065abc74a2}{%
+           family={atmosfair},
+           familyi={a\bibinitperiod}}}%
+      }
+      \strng{namehash}{c43b7ec5689686a84155aa065abc74a2}
+      \strng{fullhash}{c43b7ec5689686a84155aa065abc74a2}
+      \strng{bibnamehash}{c43b7ec5689686a84155aa065abc74a2}
+      \strng{authorbibnamehash}{c43b7ec5689686a84155aa065abc74a2}
+      \strng{authornamehash}{c43b7ec5689686a84155aa065abc74a2}
+      \strng{authorfullhash}{c43b7ec5689686a84155aa065abc74a2}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Paris aligned annual carbon budget}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.atmosfair.de/en/green_travel/annual_climate_budget/
+      \endverb
+      \verb{url}
+      \verb https://www.atmosfair.de/en/green_travel/annual_climate_budget/
+      \endverb
+    \endentry
+    \entry{destatista_coal}{online}{}
+      \name{author}{1}{}{%
+        {{hash=fd17f7dce20314001ac56a2700f1a22b}{%
+           family={Bundesamt},
+           familyi={B\bibinitperiod},
+           given={Statistisches},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd17f7dce20314001ac56a2700f1a22b}
+      \strng{fullhash}{fd17f7dce20314001ac56a2700f1a22b}
+      \strng{bibnamehash}{fd17f7dce20314001ac56a2700f1a22b}
+      \strng{authorbibnamehash}{fd17f7dce20314001ac56a2700f1a22b}
+      \strng{authornamehash}{fd17f7dce20314001ac56a2700f1a22b}
+      \strng{authorfullhash}{fd17f7dce20314001ac56a2700f1a22b}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.destatis.de/EN/Press/2022/06/PE22_233_43312.html#:~:text=Total%20electricity%20fed%20into%20the,the%20first%20quarter%20of%202021.S
+      \endverb
+      \verb{url}
+      \verb https://www.destatis.de/EN/Press/2022/06/PE22_233_43312.html#:~:text=Total%20electricity%20fed%20into%20the,the%20first%20quarter%20of%202021.S
+      \endverb
+    \endentry
+    \entry{prtr_law}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2644f47cd13ffc0a75f326bb474477ce}{%
+           family={Bundestag},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{2644f47cd13ffc0a75f326bb474477ce}
+      \strng{fullhash}{2644f47cd13ffc0a75f326bb474477ce}
+      \strng{bibnamehash}{2644f47cd13ffc0a75f326bb474477ce}
+      \strng{authorbibnamehash}{2644f47cd13ffc0a75f326bb474477ce}
+      \strng{authornamehash}{2644f47cd13ffc0a75f326bb474477ce}
+      \strng{authorfullhash}{2644f47cd13ffc0a75f326bb474477ce}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gesetz zur Ausführung des Protokolls über Schadstofffreisetzungs- und -verbringungsregister vom 21. Mai 2003 sowie zur Durchführung der Verordnung (EG) Nr. 166/2006}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb http://www.gesetze-im-internet.de/schadregprotag/__5.html
+      \endverb
+      \verb{url}
+      \verb http://www.gesetze-im-internet.de/schadregprotag/__5.html
+      \endverb
+    \endentry
+    \entry{fccl}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2644f47cd13ffc0a75f326bb474477ce}{%
+           family={Bundestag},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{2644f47cd13ffc0a75f326bb474477ce}
+      \strng{fullhash}{2644f47cd13ffc0a75f326bb474477ce}
+      \strng{bibnamehash}{2644f47cd13ffc0a75f326bb474477ce}
+      \strng{authorbibnamehash}{2644f47cd13ffc0a75f326bb474477ce}
+      \strng{authornamehash}{2644f47cd13ffc0a75f326bb474477ce}
+      \strng{authorfullhash}{2644f47cd13ffc0a75f326bb474477ce}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Federal Climate Change Law}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb http://www.gesetze-im-internet.de/englisch_ksg/englisch_ksg.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.gesetze-im-internet.de/englisch_ksg/englisch_ksg.pdf
+      \endverb
+    \endentry
+    \entry{enerdata}{online}{}
+      \name{author}{1}{}{%
+        {{hash=093207daafb4773b7e7aaaa9133212b8}{%
+           family={consulting},
+           familyi={c\bibinitperiod},
+           prefix={enerdata},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{093207daafb4773b7e7aaaa9133212b8}
+      \strng{fullhash}{093207daafb4773b7e7aaaa9133212b8}
+      \strng{bibnamehash}{093207daafb4773b7e7aaaa9133212b8}
+      \strng{authorbibnamehash}{093207daafb4773b7e7aaaa9133212b8}
+      \strng{authornamehash}{093207daafb4773b7e7aaaa9133212b8}
+      \strng{authorfullhash}{093207daafb4773b7e7aaaa9133212b8}
+      \field{sortinit}{c}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.enerdata.net/estore/energy-market/germany/#:~:text=Electricity%20consumption%20is%20dominated%20by,%25)%20and%20services%20(25%25).
+      \endverb
+      \verb{url}
+      \verb https://www.enerdata.net/estore/energy-market/germany/#:~:text=Electricity%20consumption%20is%20dominated%20by,%25)%20and%20services%20(25%25).
+      \endverb
+    \endentry
+    \entry{hall_sensor}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f6718a6f1ae3a953ca5535c70267baf8}{%
+           family={electronics-tutorials.com},
+           familyi={e\bibinithyphendelim t\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6718a6f1ae3a953ca5535c70267baf8}
+      \strng{fullhash}{f6718a6f1ae3a953ca5535c70267baf8}
+      \strng{bibnamehash}{f6718a6f1ae3a953ca5535c70267baf8}
+      \strng{authorbibnamehash}{f6718a6f1ae3a953ca5535c70267baf8}
+      \strng{authornamehash}{f6718a6f1ae3a953ca5535c70267baf8}
+      \strng{authorfullhash}{f6718a6f1ae3a953ca5535c70267baf8}
+      \field{sortinit}{e}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Hall Effect Sensor and How Magnets Make It Works}
+      \field{urlday}{26}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html
+      \endverb
+      \verb{url}
+      \verb https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html
+      \endverb
+    \endentry
+    \entry{EN50160}{online}{}
+      \name{author}{1}{}{%
+        {{hash=460cece1f27bcb8a65ce09f372a8c822}{%
+           family={EVU-Messtechnik},
+           familyi={E\bibinithyphendelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{460cece1f27bcb8a65ce09f372a8c822}
+      \strng{fullhash}{460cece1f27bcb8a65ce09f372a8c822}
+      \strng{bibnamehash}{460cece1f27bcb8a65ce09f372a8c822}
+      \strng{authorbibnamehash}{460cece1f27bcb8a65ce09f372a8c822}
+      \strng{authornamehash}{460cece1f27bcb8a65ce09f372a8c822}
+      \strng{authorfullhash}{460cece1f27bcb8a65ce09f372a8c822}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Die Netzqualitätskriterien nach EN 50160}
+      \field{urlday}{26}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.evu-messtechnik.de/docs/EVU-DIN_EN_50160-i.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.evu-messtechnik.de/docs/EVU-DIN_EN_50160-i.pdf
+      \endverb
+    \endentry
+    \entry{UN_sustain}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7bd6e4c591a4982ad52f849a213469d4}{%
+           family={Goals},
+           familyi={G\bibinitperiod},
+           given={The\bibnamedelima Global},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bd6e4c591a4982ad52f849a213469d4}
+      \strng{fullhash}{7bd6e4c591a4982ad52f849a213469d4}
+      \strng{bibnamehash}{7bd6e4c591a4982ad52f849a213469d4}
+      \strng{authorbibnamehash}{7bd6e4c591a4982ad52f849a213469d4}
+      \strng{authornamehash}{7bd6e4c591a4982ad52f849a213469d4}
+      \strng{authorfullhash}{7bd6e4c591a4982ad52f849a213469d4}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{THE 17 GOALS}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.globalgoals.org/goals/
+      \endverb
+      \verb{url}
+      \verb https://www.globalgoals.org/goals/
+      \endverb
+    \endentry
+    \entry{Hacker2020_Hall}{book}{}
+      \name{author}{2}{}{%
+        {{hash=1d551fab425fa7c8d147759b402d5636}{%
+           family={Hacker},
+           familyi={H\bibinitperiod},
+           given={Viktor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=feb1093945c7c16985ac6b45a6c855a8}{%
+           family={Sumereder},
+           familyi={S\bibinitperiod},
+           given={Christof},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter}%
+      }
+      \strng{namehash}{a7e475aa146431ef72cf7339a11b5511}
+      \strng{fullhash}{a7e475aa146431ef72cf7339a11b5511}
+      \strng{bibnamehash}{a7e475aa146431ef72cf7339a11b5511}
+      \strng{authorbibnamehash}{a7e475aa146431ef72cf7339a11b5511}
+      \strng{authornamehash}{a7e475aa146431ef72cf7339a11b5511}
+      \strng{authorfullhash}{a7e475aa146431ef72cf7339a11b5511}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-110-52102-3}
+      \field{title}{Electrical Engineering - Fundamentals}
+      \field{year}{2020}
+    \endentry
+    \entry{entropy}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f1843878225e5e948638fa810c168d9c}{%
+           family={Landauer},
+           familyi={L\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1843878225e5e948638fa810c168d9c}
+      \strng{fullhash}{f1843878225e5e948638fa810c168d9c}
+      \strng{bibnamehash}{f1843878225e5e948638fa810c168d9c}
+      \strng{authorbibnamehash}{f1843878225e5e948638fa810c168d9c}
+      \strng{authornamehash}{f1843878225e5e948638fa810c168d9c}
+      \strng{authorfullhash}{f1843878225e5e948638fa810c168d9c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IBM Journal of Research and Development}
+      \field{number}{3}
+      \field{title}{Irreversibility and Heat Generation in the Computing Process}
+      \field{volume}{5}
+      \field{year}{1961}
+      \field{pages}{183\bibrangedash 191}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1147/rd.53.0183
+      \endverb
+    \endentry
+    \entry{NICOLINI2022154662}{article}{}
+      \name{author}{34}{}{%
+        {{hash=91d9c46f9906f1f3dcdb74e44635503e}{%
+           family={Nicolini},
+           familyi={N\bibinitperiod},
+           given={Giacomo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=128e243325588d37ae8daa7fad278b78}{%
+           family={Antoniella},
+           familyi={A\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e537393262485d1674b774cf713265f0}{%
+           family={Carotenuto},
+           familyi={C\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod}}}%
+        {{hash=1e1f593f8fa6072b6ddad873cce4b56d}{%
+           family={Christen},
+           familyi={C\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6e67f77fe4702964e6cd500a96516c8a}{%
+           family={Ciais},
+           familyi={C\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=110a74cdd27984bd5b85e5d92157d593}{%
+           family={Feigenwinter},
+           familyi={F\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c4a0be2de5cfd5afb5d592c21cc04684}{%
+           family={Gioli},
+           familyi={G\bibinitperiod},
+           given={Beniamino},
+           giveni={B\bibinitperiod}}}%
+        {{hash=90d1df30c544bbc04212d6fbcc306bab}{%
+           family={Stagakis},
+           familyi={S\bibinitperiod},
+           given={Stavros},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f5ea85996c80a818005d68bf295e5330}{%
+           family={Velasco},
+           familyi={V\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=23f597f48fa2bcb5414a4451b56b31ee}{%
+           family={Vogt},
+           familyi={V\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4a3d5e6c18e1e8c5b8fb2a8e1cc6a01e}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Helen\bibnamedelima C.},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=64562a661bf091a79a8080973af0f0ef}{%
+           family={Barlow},
+           familyi={B\bibinitperiod},
+           given={Janet},
+           giveni={J\bibinitperiod}}}%
+        {{hash=732365a43de8c8fc05da2b81a05b4509}{%
+           family={Chrysoulakis},
+           familyi={C\bibinitperiod},
+           given={Nektarios},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f990793c7c1a4041a3ca18991d094fca}{%
+           family={Duce},
+           familyi={D\bibinitperiod},
+           given={Pierpaolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=026d4821ba26c7f9e9674996259de9f3}{%
+           family={Graus},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b5fb9ed1cd2ab54a64ae7d223d15eb6f}{%
+           family={Helfter},
+           familyi={H\bibinitperiod},
+           given={Carole},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8ca795987accffbd35cb74ae9b4ca02c}{%
+           family={Heusinkveld},
+           familyi={H\bibinitperiod},
+           given={Bert},
+           giveni={B\bibinitperiod}}}%
+        {{hash=dd4efd4dbb0cbeb3e8af76d31c2b69dc}{%
+           family={Järvi},
+           familyi={J\bibinitperiod},
+           given={Leena},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f2a767f3d32b74d69299b27cc8a2d4e7}{%
+           family={Karl},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d6a7ff4dd27d8ab5b97d17d9d6391324}{%
+           family={Marras},
+           familyi={M\bibinitperiod},
+           given={Serena},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c8e684c04682cdbb50a0c0b904144ba2}{%
+           family={Masson},
+           familyi={M\bibinitperiod},
+           given={Valéry},
+           giveni={V\bibinitperiod}}}%
+        {{hash=626d755bf6955760ce6a7a1ff650c3f0}{%
+           family={Matthews},
+           familyi={M\bibinitperiod},
+           given={Bradley},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c553cbeb9ebae9c3ea29d7fbe5381c27}{%
+           family={Meier},
+           familyi={M\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+        {{hash=093c71af1c9838af4d05e248d97e25ff}{%
+           family={Nemitz},
+           familyi={N\bibinitperiod},
+           given={Eiko},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b566dafac3d288a11a0300f5a4e48b9d}{%
+           family={Sabbatini},
+           familyi={S\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b844a9a6e871ee023928cf391ef1a425}{%
+           family={Scherer},
+           familyi={S\bibinitperiod},
+           given={Dieter},
+           giveni={D\bibinitperiod}}}%
+        {{hash=67e25c1f300a31900c7626e24383144d}{%
+           family={Schume},
+           familyi={S\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b55a598090563a5915346c8b40dcdfa6}{%
+           family={Sirca},
+           familyi={S\bibinitperiod},
+           given={Costantino},
+           giveni={C\bibinitperiod}}}%
+        {{hash=115896bf0e65eab03b83e0378d050a2d}{%
+           family={Steeneveld},
+           familyi={S\bibinitperiod},
+           given={Gert-Jan},
+           giveni={G\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=437878949857ec25b93c4185aa46b169}{%
+           family={Vagnoli},
+           familyi={V\bibinitperiod},
+           given={Carolina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a3783d223e394585b1e758cfd913c685}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yilong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a6a5cf6a00ba378a3cec36a4c95ff79b}{%
+           family={Zaldei},
+           familyi={Z\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cd8f75ba6fb515ea6ee28d885bd92e4b}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=66560cae206074e22342812df67e9efc}{%
+           family={Papale},
+           familyi={P\bibinitperiod},
+           given={Dario},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5e891b0c9f503754542ac7099a54b7b}
+      \strng{fullhash}{fe8de918634315719756adc9bd6bb7aa}
+      \strng{bibnamehash}{e5e891b0c9f503754542ac7099a54b7b}
+      \strng{authorbibnamehash}{e5e891b0c9f503754542ac7099a54b7b}
+      \strng{authornamehash}{e5e891b0c9f503754542ac7099a54b7b}
+      \strng{authorfullhash}{fe8de918634315719756adc9bd6bb7aa}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0048-9697}
+      \field{journaltitle}{Science of The Total Environment}
+      \field{title}{Direct observations of CO2 emission reductions due to COVID-19 lockdown across European urban districts}
+      \field{volume}{830}
+      \field{year}{2022}
+      \field{pages}{154662}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.scitotenv.2022.154662
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0048969722017557
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0048969722017557
+      \endverb
+      \keyw{Eddy-covariance,Urban fluxes,Urban pollution,Traffic emissions,Corona virus pandemic,Social restrictions}
+    \endentry
+    \entry{Pereira}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=9026f3b05f12685366186b37a76ab2f3}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=80cfb4d3c3387da146e1065d598d3348}{%
+           family={Couto},
+           familyi={C\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=96db25ba8f44b351f684fec84f929330}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0d4d33b8a24aad3be2e315b27f164368}{%
+           family={Rua},
+           familyi={R\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e56f75a786e7477b6d47697702900967}{%
+           family={Cunha},
+           familyi={C\bibinitperiod},
+           given={Jácome},
+           giveni={J\bibinitperiod}}}%
+        {{hash=31abc07b903b8d308ce26b70a7a44af1}{%
+           family={Fernandes},
+           familyi={F\bibinitperiod},
+           given={João\bibnamedelima Paulo},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a772b5aa30aa09c26654983ee7fe0af7}{%
+           family={Saraiva},
+           familyi={S\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vancouver, BC, Canada}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{8766df7b8c845b5221b1d134295d970c}
+      \strng{fullhash}{9636bd7f21f5641a06c0e3e238f9da45}
+      \strng{bibnamehash}{8766df7b8c845b5221b1d134295d970c}
+      \strng{authorbibnamehash}{8766df7b8c845b5221b1d134295d970c}
+      \strng{authornamehash}{8766df7b8c845b5221b1d134295d970c}
+      \strng{authorfullhash}{9636bd7f21f5641a06c0e3e238f9da45}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a study of the runtime, memory usage and energy consumption of twenty seven well-known software languages. We monitor the performance of such languages using ten different programming problems, expressed in each of the languages. Our results show interesting findings, such as, slower/faster languages consuming less/more energy, and how memory usage influences energy consumption. Finally, we show how to use our results to provide software engineers support to decide which language to use when energy efficiency is a concern.}
+      \field{booktitle}{Proceedings of the 10th ACM SIGPLAN International Conference on Software Language Engineering}
+      \field{isbn}{9781450355254}
+      \field{series}{SLE 2017}
+      \field{title}{Energy Efficiency across Programming Languages: How Do Energy, Time, and Memory Relate?}
+      \field{year}{2017}
+      \field{pages}{256\bibrangedash 267}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1145/3136014.3136031
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3136014.3136031
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3136014.3136031
+      \endverb
+      \keyw{Green Software,Programming Languages,Energy Efficiency,Language Benchmarking}
+    \endentry
+    \entry{entropy-demo}{article}{}
+      \name{author}{8}{}{%
+        {{hash=727dfa87f0cd1c09b6e97769e9afe4ec}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={J.\bibnamedelimi P.\bibnamedelimi S.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=2eb006c5383d3802e57290270f56eb5f}{%
+           family={Sarthour},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c78031cdb256f8cfe4c6ecb4f2260adc}{%
+           family={Souza},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7596fab590b3e023becc178e0d17ebc3}{%
+           family={Oliveira},
+           familyi={O\bibinitperiod},
+           given={I.\bibnamedelimi S.},
+           giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=93c75c2e978cfe0c6b30470d0118a210}{%
+           family={Goold},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=38dde52e3a0570b284e41b7100bbadc8}{%
+           family={Modi},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e86ba1656727f7ab88b7f6a0ea48dcf3}{%
+           family={Soares-Pinto},
+           familyi={S\bibinithyphendelim P\bibinitperiod},
+           given={D.\bibnamedelimi O.},
+           giveni={D\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=af3af0412899b3da3ea707a44068f2a7}{%
+           family={Céleri},
+           familyi={C\bibinitperiod},
+           given={L.\bibnamedelimi C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{894daf4b519b08e6839acc478de877a5}
+      \strng{fullhash}{e197d57fffc6e22decd209fb3e70d23f}
+      \strng{bibnamehash}{894daf4b519b08e6839acc478de877a5}
+      \strng{authorbibnamehash}{894daf4b519b08e6839acc478de877a5}
+      \strng{authornamehash}{894daf4b519b08e6839acc478de877a5}
+      \strng{authorfullhash}{e197d57fffc6e22decd209fb3e70d23f}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{number}{2188}
+      \field{title}{Experimental demonstration of information to energy conversion in a quantum system at the Landauer limit}
+      \field{volume}{472}
+      \field{year}{2016}
+      \field{pages}{20150813}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rspa.2015.0813
+      \endverb
+      \verb{eprint}
+      \verb https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.2015.0813
+      \endverb
+      \verb{urlraw}
+      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rspa.2015.0813
+      \endverb
+      \verb{url}
+      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rspa.2015.0813
+      \endverb
+    \endentry
+    \entry{hall_effect_element14}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a17fe1429e3440dc640c1a46474d2db3}{%
+           family={presents},
+           familyi={p\bibinitperiod},
+           given={Element14},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a17fe1429e3440dc640c1a46474d2db3}
+      \strng{fullhash}{a17fe1429e3440dc640c1a46474d2db3}
+      \strng{bibnamehash}{a17fe1429e3440dc640c1a46474d2db3}
+      \strng{authorbibnamehash}{a17fe1429e3440dc640c1a46474d2db3}
+      \strng{authornamehash}{a17fe1429e3440dc640c1a46474d2db3}
+      \strng{authorfullhash}{a17fe1429e3440dc640c1a46474d2db3}
+      \field{sortinit}{p}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How Do Hall Effect Sensors Work? - The Learning Circuit}
+      \field{urlday}{18}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://youtu.be/dgyB2-1VDI0?t=242
+      \endverb
+      \verb{url}
+      \verb https://youtu.be/dgyB2-1VDI0?t=242
+      \endverb
+    \endentry
+    \entry{pic:eu_goals}{online}{}
+      \name{author}{2}{}{%
+        {{hash=0610123bdd4ffc191a3ea05a847e1307}{%
+           family={Press},
+           familyi={P\bibinitperiod}}}%
+        {{hash=86af01a0f0e4d993ce532f62f084a68c}{%
+           family={Federal\bibnamedelima Government},
+           familyi={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Information\bibnamedelima Office},
+           giveni={I\bibinitperiod\bibinitdelim O\bibinitperiod},
+           prefix={of\bibnamedelima the},
+           prefixi={o\bibinitperiod\bibinitdelim t\bibinitperiod}}}%
+      }
+      \strng{namehash}{9fb5a9d4c1307136fe5d409aff7a4603}
+      \strng{fullhash}{9fb5a9d4c1307136fe5d409aff7a4603}
+      \strng{bibnamehash}{9fb5a9d4c1307136fe5d409aff7a4603}
+      \strng{authorbibnamehash}{9fb5a9d4c1307136fe5d409aff7a4603}
+      \strng{authornamehash}{9fb5a9d4c1307136fe5d409aff7a4603}
+      \strng{authorfullhash}{9fb5a9d4c1307136fe5d409aff7a4603}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Agenda 2030}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.bundesregierung.de/breg-en/issues/sustainability/global-goals-for-sustainable-development-355956
+      \endverb
+      \verb{url}
+      \verb https://www.bundesregierung.de/breg-en/issues/sustainability/global-goals-for-sustainable-development-355956
+      \endverb
+    \endentry
+    \entry{ghg}{report}{}
+      \name{author}{6}{}{%
+        {{hash=6ad49272725d9c47f7458fe694a1e7b0}{%
+           family={Ranganathan},
+           familyi={R\bibinitperiod},
+           given={GHG\bibnamedelimb Protocol\bibnamedelimb Initiative\bibnamedelimb Team\bibnamedelima Janet},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=5e57ef66d0c88fb61f8a4eca5f80dbe9}{%
+           family={Corbier},
+           familyi={C\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1db3ea3ceb5749831544c099a2655319}{%
+           family={Bhatia},
+           familyi={B\bibinitperiod},
+           given={Pankaj},
+           giveni={P\bibinitperiod}}}%
+        {{hash=26a1c3b4ed62cad352194bb2d2eafae8}{%
+           family={Schmitz},
+           familyi={S\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6d7457c3c4fc21561bf0f255f3e799ef}{%
+           family={Gage},
+           familyi={G\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=dcefd071161e0f82d2ea6e1f431cfdbe}{%
+           family={Oren},
+           familyi={O\bibinitperiod},
+           given={Kjell},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {World Ressources Institute}%
+      }
+      \strng{namehash}{e8e7bf3f441542c0a25fddff4267780f}
+      \strng{fullhash}{fd94181f0423c5cf788689356564160b}
+      \strng{bibnamehash}{e8e7bf3f441542c0a25fddff4267780f}
+      \strng{authorbibnamehash}{e8e7bf3f441542c0a25fddff4267780f}
+      \strng{authornamehash}{e8e7bf3f441542c0a25fddff4267780f}
+      \strng{authorfullhash}{fd94181f0423c5cf788689356564160b}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Corporate Accounting and Reporting Standard REVISED EDITION}
+      \field{type}{techreport}
+      \field{year}{2015}
+    \endentry
+    \entry{co2_footprint_api}{online}{}
+      \name{author}{1}{}{%
+        {{hash=94d051a2a97ff024d2b1a346c5065780}{%
+           family={rapidapi/STROMDAO},
+           familyi={r\bibinitperiod}}}%
+      }
+      \strng{namehash}{94d051a2a97ff024d2b1a346c5065780}
+      \strng{fullhash}{94d051a2a97ff024d2b1a346c5065780}
+      \strng{bibnamehash}{94d051a2a97ff024d2b1a346c5065780}
+      \strng{authorbibnamehash}{94d051a2a97ff024d2b1a346c5065780}
+      \strng{authornamehash}{94d051a2a97ff024d2b1a346c5065780}
+      \strng{authorfullhash}{94d051a2a97ff024d2b1a346c5065780}
+      \field{sortinit}{r}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \verb{urlraw}
+      \verb https://rapidapi.com/stromdao-stromdao-default/api/electricity-carbon-footprint-germany
+      \endverb
+      \verb{url}
+      \verb https://rapidapi.com/stromdao-stromdao-default/api/electricity-carbon-footprint-germany
+      \endverb
+    \endentry
+    \entry{roth}{book}{}
+      \name{author}{3}{}{%
+        {{hash=c79f0db8dbdae6d1282c89eabf4c42c3}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Kurt\bibnamedelima W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=a9f7b8217509cb701d0fdf5a6beaeb55}{%
+           family={Goldstein},
+           familyi={G\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9ee9f82a8dc83677849878050f105da7}{%
+           family={Kleinman},
+           familyi={K\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Arthur D. Little, Inc.}%
+      }
+      \strng{namehash}{481270884750099c68f03cd873862a0f}
+      \strng{fullhash}{6df19e38ac617d737cd1aca459a2f360}
+      \strng{bibnamehash}{6df19e38ac617d737cd1aca459a2f360}
+      \strng{authorbibnamehash}{6df19e38ac617d737cd1aca459a2f360}
+      \strng{authornamehash}{481270884750099c68f03cd873862a0f}
+      \strng{authorfullhash}{6df19e38ac617d737cd1aca459a2f360}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Energy Consumption by Office and Telecommunications Equipment in Commercial Buildings Volume I: Energy Consumption Baseline}
+      \field{year}{2002}
+    \endentry
+    \entry{saidur}{article}{}
+      \name{author}{1}{}{%
+        {{hash=934b1b48ce4143ef3f5e2ac3c6ef3ee1}{%
+           family={Saidur},
+           familyi={S\bibinitperiod},
+           given={Rahman},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{934b1b48ce4143ef3f5e2ac3c6ef3ee1}
+      \strng{fullhash}{934b1b48ce4143ef3f5e2ac3c6ef3ee1}
+      \strng{bibnamehash}{934b1b48ce4143ef3f5e2ac3c6ef3ee1}
+      \strng{authorbibnamehash}{934b1b48ce4143ef3f5e2ac3c6ef3ee1}
+      \strng{authornamehash}{934b1b48ce4143ef3f5e2ac3c6ef3ee1}
+      \strng{authorfullhash}{934b1b48ce4143ef3f5e2ac3c6ef3ee1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Energy policy}
+      \field{number}{10}
+      \field{title}{Energy consumption, energy savings, and emission analysis in Malaysian office buildings}
+      \field{volume}{37}
+      \field{year}{2009}
+      \field{pages}{4104\bibrangedash 4113}
+      \range{pages}{10}
+    \endentry
+    \entry{steers}{article}{}
+      \name{author}{2}{}{%
+        {{hash=597575ba1dda481ff9acadc2b5e3adb4}{%
+           family={Steers},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=fcdc5b7523325a644f7505e73f94d222}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi W.},
+           giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{6cff1d5390396ff5ce38768db9799548}
+      \strng{fullhash}{6cff1d5390396ff5ce38768db9799548}
+      \strng{bibnamehash}{6cff1d5390396ff5ce38768db9799548}
+      \strng{authorbibnamehash}{6cff1d5390396ff5ce38768db9799548}
+      \strng{authornamehash}{6cff1d5390396ff5ce38768db9799548}
+      \strng{authorfullhash}{6cff1d5390396ff5ce38768db9799548}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Bulletin}
+      \field{number}{7}
+      \field{title}{The role of task-goal attributes in employee performance.}
+      \field{volume}{81}
+      \field{year}{1974}
+      \field{pages}{434\bibrangedash 452}
+      \range{pages}{19}
+      \verb{urlraw}
+      \verb https://doi.org/10.1037/h0036775
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1037/h0036775
+      \endverb
+    \endentry
+    \entry{suzuki}{article}{}
+      \name{author}{2}{}{%
+        {{hash=54764ff0680f77317bb8f92f21b8cb47}{%
+           family={Suzuki},
+           familyi={S\bibinitperiod},
+           given={Michiya},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4978ed077fbaa4873072048a87350fd8}{%
+           family={Oka},
+           familyi={O\bibinitperiod},
+           given={Tatsuo},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea9b1c7567e3876998c206edc701c781}
+      \strng{fullhash}{ea9b1c7567e3876998c206edc701c781}
+      \strng{bibnamehash}{ea9b1c7567e3876998c206edc701c781}
+      \strng{authorbibnamehash}{ea9b1c7567e3876998c206edc701c781}
+      \strng{authornamehash}{ea9b1c7567e3876998c206edc701c781}
+      \strng{authorfullhash}{ea9b1c7567e3876998c206edc701c781}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The purpose of this study is to quantify the total amount of energy consumption and CO2 emission caused by the construction, operation, maintenance, and renovation of office buildings in Japan. In order to quantify the life cycle energy consumption and CO2 emission of a building, it is necessary to obtain an estimate of the total quantity of domestic products and services used directly or indirectly (including the repercussion effect of the economy) during the life cycle of the building. The Input/Output (I/O) Table of Japan is used to calculate the total domestic product and then energy consumption and CO2 emission are estimated by using energy consumption and CO2 emission data for unit production of various categories of industries.}
+      \field{issn}{0378-7788}
+      \field{journaltitle}{Energy and Buildings}
+      \field{number}{1}
+      \field{title}{Estimation of life cycle energy consumption and CO2 emission of office buildings in Japan}
+      \field{volume}{28}
+      \field{year}{1998}
+      \field{pages}{33\bibrangedash 41}
+      \range{pages}{9}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0378-7788(98)00010-3
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0378778898000103
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0378778898000103
+      \endverb
+      \keyw{Energy consumption,Repercussion effect,CO consumption}
+    \endentry
+    \entry{report}{online}{}
+      \name{author}{1}{}{%
+        {{hash=eb35b544edd5583deae1b04b57cf5a08}{%
+           family={Umweltbundesamt},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb35b544edd5583deae1b04b57cf5a08}
+      \strng{fullhash}{eb35b544edd5583deae1b04b57cf5a08}
+      \strng{bibnamehash}{eb35b544edd5583deae1b04b57cf5a08}
+      \strng{authorbibnamehash}{eb35b544edd5583deae1b04b57cf5a08}
+      \strng{authornamehash}{eb35b544edd5583deae1b04b57cf5a08}
+      \strng{authorfullhash}{eb35b544edd5583deae1b04b57cf5a08}
+      \field{extraname}{1}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Emissionen von Wärmekraftwerken und anderen Verbrennungsanlagen}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.umweltbundesamt.de/daten/energie/emissionen-von-waermekraftwerken-anderen#das-schadstofffreisetzungs-und-verbringungsregister-prtr-in-deutschland
+      \endverb
+      \verb{url}
+      \verb https://www.umweltbundesamt.de/daten/energie/emissionen-von-waermekraftwerken-anderen#das-schadstofffreisetzungs-und-verbringungsregister-prtr-in-deutschland
+      \endverb
+    \endentry
+    \entry{co2_contrib}{online}{}
+      \name{author}{1}{}{%
+        {{hash=eb35b544edd5583deae1b04b57cf5a08}{%
+           family={Umweltbundesamt},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb35b544edd5583deae1b04b57cf5a08}
+      \strng{fullhash}{eb35b544edd5583deae1b04b57cf5a08}
+      \strng{bibnamehash}{eb35b544edd5583deae1b04b57cf5a08}
+      \strng{authorbibnamehash}{eb35b544edd5583deae1b04b57cf5a08}
+      \strng{authornamehash}{eb35b544edd5583deae1b04b57cf5a08}
+      \strng{authorfullhash}{eb35b544edd5583deae1b04b57cf5a08}
+      \field{extraname}{2}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Nationale Treibhausgas Inventur}
+      \verb{urlraw}
+      \verb https://www.umweltbundesamt.de/daten/klima/treibhausgas-emissionen-in-deutschland#treibhausgas-emissionen-nach-kategorien
+      \endverb
+      \verb{url}
+      \verb https://www.umweltbundesamt.de/daten/klima/treibhausgas-emissionen-in-deutschland#treibhausgas-emissionen-nach-kategorien
+      \endverb
+    \endentry
+    \entry{german_goals}{online}{}
+      \name{author}{1}{}{%
+        {{hash=49e690e82727ac180414a6adac6534e4}{%
+           family={Voluntary\bibnamedelimb National\bibnamedelimb Review\bibnamedelima 2021},
+           familyi={V\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim 2\bibinitperiod},
+           given={United\bibnamedelima Nations},
+           giveni={U\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{49e690e82727ac180414a6adac6534e4}
+      \strng{fullhash}{49e690e82727ac180414a6adac6534e4}
+      \strng{bibnamehash}{49e690e82727ac180414a6adac6534e4}
+      \strng{authorbibnamehash}{49e690e82727ac180414a6adac6534e4}
+      \strng{authornamehash}{49e690e82727ac180414a6adac6534e4}
+      \strng{authorfullhash}{49e690e82727ac180414a6adac6534e4}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \verb{urlraw}
+      \verb https://sustainabledevelopment.un.org/memberstates/germany
+      \endverb
+      \verb{url}
+      \verb https://sustainabledevelopment.un.org/memberstates/germany
+      \endverb
+    \endentry
+    \entry{wilhelm_repo}{online}{}
+      \name{author}{1}{}{%
+        {{hash=713e37b923317fe48ef0e6978d767fda}{%
+           family={Wilhelm},
+           familyi={W\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{713e37b923317fe48ef0e6978d767fda}
+      \strng{fullhash}{713e37b923317fe48ef0e6978d767fda}
+      \strng{bibnamehash}{713e37b923317fe48ef0e6978d767fda}
+      \strng{authorbibnamehash}{713e37b923317fe48ef0e6978d767fda}
+      \strng{authornamehash}{713e37b923317fe48ef0e6978d767fda}
+      \strng{authorfullhash}{713e37b923317fe48ef0e6978d767fda}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \verb{urlraw}
+      \verb https://github.com/SeWi108/AllnetPowerplugCrawler
+      \endverb
+      \verb{url}
+      \verb https://github.com/SeWi108/AllnetPowerplugCrawler
+      \endverb
+    \endentry
+    \entry{wilhelm}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=713e37b923317fe48ef0e6978d767fda}{%
+           family={Wilhelm},
+           familyi={W\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=afd6a417b0decdb7c06dac0f4e4da7da}{%
+           family={Jakob},
+           familyi={J\bibinitperiod},
+           given={Dietmar},
+           giveni={D\bibinitperiod}}}%
+        {{hash=df04fbd27a04af651b2e2fe94abf573e}{%
+           family={Kasbauer},
+           familyi={K\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=868f93dea2c505e0bab9ebf467c1ee9d}{%
+           family={Ahrens},
+           familyi={A\bibinitperiod},
+           given={Diane},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=8b9a8afb4153d569a17f211b83af9fac}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Xin-She},
+           giveni={X\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=669a81f427db38e68ab7e0f632f1c00d}{%
+           family={Sherratt},
+           familyi={S\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=659a6768e590976867dabad7f147d36c}{%
+           family={Dey},
+           familyi={D\bibinitperiod},
+           given={Nilanjan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=aefd2493135c5810b465eeaf6249e110}{%
+           family={Joshi},
+           familyi={J\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{1}{%
+        {Springer Singapore}%
+      }
+      \strng{namehash}{d54a8385c9b3d545d37f832f23a6efb0}
+      \strng{fullhash}{ffbc1b0217bfce7785c7e21c29dee23a}
+      \strng{bibnamehash}{d54a8385c9b3d545d37f832f23a6efb0}
+      \strng{authorbibnamehash}{d54a8385c9b3d545d37f832f23a6efb0}
+      \strng{authornamehash}{d54a8385c9b3d545d37f832f23a6efb0}
+      \strng{authorfullhash}{ffbc1b0217bfce7785c7e21c29dee23a}
+      \strng{editorbibnamehash}{10262b8b21bf7a09ae9420c0dfbb6d86}
+      \strng{editornamehash}{10262b8b21bf7a09ae9420c0dfbb6d86}
+      \strng{editorfullhash}{4963da6f598e89633539fbe4c3c43455}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Due to the increasing spread of smart meters, numerous researchers are currently working on disaggregating the power consumption data. This procedure is commonly known as Non-Intrusive Load Monitoring (NILM). However, most approaches to energy disaggregation first require a labeled dataset to train these algorithms. In this paper, we present a new labeled power consumption dataset that was collected in 20 private households in Germany between September 2019 and July 2020. For this purpose, the total power consumption of each household was measured with a commercial available smart meter and the individual consumption data of 10 selected household appliances were collected.Wilhelm, SebastianJakob, DietmarKasbauer, JakobAhren, Diane}
+      \field{booktitle}{Proceedings of Sixth International Congress on Information and Communication Technology}
+      \field{isbn}{978-981-16-2377-6}
+      \field{title}{GeLaP: German Labeled Dataset for Power Consumption}
+      \field{year}{2022}
+      \field{pages}{21\bibrangedash 33}
+      \range{pages}{13}
+    \endentry
+    \entry{min-energy}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=1aa6071aeb12f4d9544d27c0e415c676}{%
+           family={Zhirnov},
+           familyi={Z\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=5fcea22aa574d1bb1afbddd93242980a}{%
+           family={Cavin},
+           familyi={C\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b1febff6de7a44252d8b9706d3591afd}{%
+           family={Gammaitoni},
+           familyi={G\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=1cb7de305d403a8bdcd941fa9936872c}{%
+           family={Fagas},
+           familyi={F\bibinitperiod},
+           given={Giorgos},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b1febff6de7a44252d8b9706d3591afd}{%
+           family={Gammaitoni},
+           familyi={G\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7d8a09078a2d8e7441d473a5d5b61aad}{%
+           family={Paul},
+           familyi={P\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9229e7b6dd11c6584dc320aadfdb1699}{%
+           family={Berini},
+           familyi={B\bibinitperiod},
+           given={Gabriel\bibnamedelima Abadal},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rijeka}%
+      }
+      \list{publisher}{1}{%
+        {IntechOpen}%
+      }
+      \strng{namehash}{e2b4b273eea5fa8bc678150acb807187}
+      \strng{fullhash}{eb22ffeed1f6d43975ce9e1ac515bda6}
+      \strng{bibnamehash}{eb22ffeed1f6d43975ce9e1ac515bda6}
+      \strng{authorbibnamehash}{eb22ffeed1f6d43975ce9e1ac515bda6}
+      \strng{authornamehash}{e2b4b273eea5fa8bc678150acb807187}
+      \strng{authorfullhash}{eb22ffeed1f6d43975ce9e1ac515bda6}
+      \strng{editorbibnamehash}{58cd1784c079558074e0a1ee62c8bcd0}
+      \strng{editornamehash}{58cd1784c079558074e0a1ee62c8bcd0}
+      \strng{editorfullhash}{4dbc503abe5f6a910fb7968502477a10}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ICT - Energy - Concepts Towards Zero}
+      \field{chapter}{7}
+      \field{title}{Minimum Energy of Computing, Fundamental Considerations}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.5772/57346
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.5772/57346
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.5772/57346
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
